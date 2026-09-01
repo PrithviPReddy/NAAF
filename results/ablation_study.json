@@ -1,0 +1,72 @@
+{
+  "1_sumup_baseline": {
+    "attacker_flow_collected": 117,
+    "attacker_capacity_per_attack_edge": 0.0731,
+    "honest_flow_collected": 86,
+    "honest_collection_rate": 0.43,
+    "attacker_influence_change_pct_vs_sumup": -0.0,
+    "honest_collection_change_pct_vs_sumup": 0.0,
+    "honest_collection_loss_pp_vs_sumup": 0.0,
+    "attacker_reduction_per_1pp_honest_lost": null
+  },
+  "2_naaf_current_alpha1.0": {
+    "attacker_flow_collected": 54.111,
+    "attacker_capacity_per_attack_edge": 0.0338,
+    "honest_flow_collected": 51.27,
+    "honest_collection_rate": 0.2563,
+    "attacker_influence_change_pct_vs_sumup": -53.76,
+    "honest_collection_change_pct_vs_sumup": -40.4,
+    "honest_collection_loss_pp_vs_sumup": 17.37,
+    "attacker_reduction_per_1pp_honest_lost": 3.095
+  },
+  "3_thresholded_p_gt_0.5": {
+    "attacker_flow_collected": 54.111,
+    "attacker_capacity_per_attack_edge": 0.0338,
+    "honest_flow_collected": 51.306,
+    "honest_collection_rate": 0.2565,
+    "attacker_influence_change_pct_vs_sumup": -53.76,
+    "honest_collection_change_pct_vs_sumup": -40.35,
+    "honest_collection_loss_pp_vs_sumup": 17.35,
+    "attacker_reduction_per_1pp_honest_lost": 3.099
+  },
+  "4_milder_alpha0.25": {
+    "attacker_flow_collected": 109.081,
+    "attacker_capacity_per_attack_edge": 0.0682,
+    "honest_flow_collected": 77.489,
+    "honest_collection_rate": 0.3874,
+    "attacker_influence_change_pct_vs_sumup": -6.7,
+    "honest_collection_change_pct_vs_sumup": -9.91,
+    "honest_collection_loss_pp_vs_sumup": 4.26,
+    "attacker_reduction_per_1pp_honest_lost": 1.573
+  },
+  "4_milder_alpha0.5": {
+    "attacker_flow_collected": 95.353,
+    "attacker_capacity_per_attack_edge": 0.0596,
+    "honest_flow_collected": 68.977,
+    "honest_collection_rate": 0.3449,
+    "attacker_influence_change_pct_vs_sumup": -18.47,
+    "honest_collection_change_pct_vs_sumup": -19.79,
+    "honest_collection_loss_pp_vs_sumup": 8.51,
+    "attacker_reduction_per_1pp_honest_lost": 2.17
+  },
+  "4_milder_alpha0.75": {
+    "attacker_flow_collected": 78.186,
+    "attacker_capacity_per_attack_edge": 0.0489,
+    "honest_flow_collected": 60.29,
+    "honest_collection_rate": 0.3015,
+    "attacker_influence_change_pct_vs_sumup": -33.11,
+    "honest_collection_change_pct_vs_sumup": -29.88,
+    "honest_collection_loss_pp_vs_sumup": 12.85,
+    "attacker_reduction_per_1pp_honest_lost": 2.577
+  },
+  "4_milder_alpha1.0": {
+    "attacker_flow_collected": 54.111,
+    "attacker_capacity_per_attack_edge": 0.0338,
+    "honest_flow_collected": 51.27,
+    "honest_collection_rate": 0.2563,
+    "attacker_influence_change_pct_vs_sumup": -53.76,
+    "honest_collection_change_pct_vs_sumup": -40.4,
+    "honest_collection_loss_pp_vs_sumup": 17.37,
+    "attacker_reduction_per_1pp_honest_lost": 3.095
+  }
+}

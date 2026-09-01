@@ -1,0 +1,11 @@
+{
+  "collector": 62,
+  "C_max": 1000,
+  "n_attack_edges": 1600,
+  "attacker_flow_collected": 117,
+  "attacker_capacity_per_attack_edge": 0.0731,
+  "n_honest_voters_sampled": 200,
+  "honest_flow_collected": 86,
+  "honest_collection_rate": 0.43,
+  "honest_collection_rate_full_turnout_4039_voters": 0.1013
+}

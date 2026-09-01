@@ -1,0 +1,47 @@
+{
+  "scenario": "sparse",
+  "fair_honest_seeds_only": {
+    "tag": "sparse: honest-seeds-only (fair vs SybilRank)",
+    "reveal_sybil_labels": false,
+    "n_train_revealed": 807,
+    "n_eval_holdout": 3257,
+    "final_train_loss": 0.0008,
+    "auc_holdout": 0.8534,
+    "attention_by_edge_type": {
+      "honest": {
+        "mean": 0.02119,
+        "n": 176468
+      },
+      "sybil": {
+        "mean": 0.06912,
+        "n": 210
+      },
+      "attack": {
+        "mean": 0.06711,
+        "n": 400
+      }
+    }
+  },
+  "upper_bound_with_sybil_seeds": {
+    "tag": "sparse: honest+sybil-seeds (upper bound, documented separately)",
+    "reveal_sybil_labels": true,
+    "n_train_revealed": 812,
+    "n_eval_holdout": 3252,
+    "final_train_loss": 0.0381,
+    "auc_holdout": 0.8474,
+    "attention_by_edge_type": {
+      "honest": {
+        "mean": 0.02127,
+        "n": 176468
+      },
+      "sybil": {
+        "mean": 0.04981,
+        "n": 210
+      },
+      "attack": {
+        "mean": 0.0564,
+        "n": 400
+      }
+    }
+  }
+}

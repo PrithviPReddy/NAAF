@@ -1,0 +1,8 @@
+{
+  "n_seeds": 100,
+  "iterations": 13,
+  "roc_auc_degree_normalized": 0.5921,
+  "roc_auc_raw_trust_pre_normalization": 0.8675,
+  "top_200_highest_trust_sybil_fraction": 0.0,
+  "note": "Sybils end up with HIGHER, not lower, final normalized trust on average in this configuration -- degree normalization (meant to remove high-degree bias) partly cancels the signal, because our Sybil cluster is itself unusually high-degree. roc_auc_raw_trust shows the un-normalized signal is much stronger (0.5=random, 1.0=perfect)."
+}

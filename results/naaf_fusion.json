@@ -1,0 +1,32 @@
+{
+  "collector": 62,
+  "C_max": 1000,
+  "sybil_threshold_v2": 0.5,
+  "n_attack_edges": 1600,
+  "sumup_baseline_recomputed": {
+    "attacker_flow_collected": 117,
+    "attacker_capacity_per_attack_edge": 0.0731,
+    "honest_flow_collected": 86,
+    "honest_collection_rate": 0.43
+  },
+  "naaf_v1_continuous": {
+    "attacker_flow_collected": 54.11136192083359,
+    "attacker_capacity_per_attack_edge": 0.0338,
+    "honest_flow_collected": 51.26987234746329,
+    "honest_collection_rate": 0.2563
+  },
+  "naaf_v2_threshold_gated": {
+    "attacker_flow_collected": 54.11136192083359,
+    "attacker_capacity_per_attack_edge": 0.0338,
+    "honest_flow_collected": 51.305651783943176,
+    "honest_collection_rate": 0.2565
+  },
+  "improvement_v1_vs_sumup": {
+    "attacker_capacity_reduction_pct": 53.76,
+    "honest_collection_change_pct_points": -17.37
+  },
+  "improvement_v2_vs_sumup": {
+    "attacker_capacity_reduction_pct": 53.76,
+    "honest_collection_change_pct_points": -17.35
+  }
+}

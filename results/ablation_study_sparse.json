@@ -1,0 +1,112 @@
+{
+  "1_sumup_baseline": {
+    "attacker_flow_collected": 18,
+    "attacker_capacity_per_attack_edge": 0.09,
+    "honest_flow_collected": 43,
+    "honest_collection_rate": 0.215,
+    "attacker_influence_change_pct_vs_sumup": -0.0,
+    "honest_collection_change_pct_vs_sumup": 0.0,
+    "honest_collection_loss_pp_vs_sumup": 0.0,
+    "attacker_reduction_per_1pp_honest_lost": null
+  },
+  "2_naaf_current_alpha1.0": {
+    "attacker_flow_collected": 17.912,
+    "attacker_capacity_per_attack_edge": 0.0896,
+    "honest_flow_collected": 42.783,
+    "honest_collection_rate": 0.2139,
+    "attacker_influence_change_pct_vs_sumup": -0.44,
+    "honest_collection_change_pct_vs_sumup": -0.51,
+    "honest_collection_loss_pp_vs_sumup": 0.11,
+    "attacker_reduction_per_1pp_honest_lost": 4.0
+  },
+  "3_thresholded_p_gt_0.5": {
+    "attacker_flow_collected": 18,
+    "attacker_capacity_per_attack_edge": 0.09,
+    "honest_flow_collected": 43,
+    "honest_collection_rate": 0.215,
+    "attacker_influence_change_pct_vs_sumup": -0.0,
+    "honest_collection_change_pct_vs_sumup": 0.0,
+    "honest_collection_loss_pp_vs_sumup": 0.0,
+    "attacker_reduction_per_1pp_honest_lost": null
+  },
+  "4_alpha0.25": {
+    "attacker_flow_collected": 17.978,
+    "attacker_capacity_per_attack_edge": 0.0899,
+    "honest_flow_collected": 42.946,
+    "honest_collection_rate": 0.2147,
+    "attacker_influence_change_pct_vs_sumup": -0.11,
+    "honest_collection_change_pct_vs_sumup": -0.14,
+    "honest_collection_loss_pp_vs_sumup": 0.03,
+    "attacker_reduction_per_1pp_honest_lost": 3.667
+  },
+  "4_alpha0.5": {
+    "attacker_flow_collected": 17.956,
+    "attacker_capacity_per_attack_edge": 0.0898,
+    "honest_flow_collected": 42.892,
+    "honest_collection_rate": 0.2145,
+    "attacker_influence_change_pct_vs_sumup": -0.22,
+    "honest_collection_change_pct_vs_sumup": -0.23,
+    "honest_collection_loss_pp_vs_sumup": 0.05,
+    "attacker_reduction_per_1pp_honest_lost": 4.4
+  },
+  "4_alpha0.75": {
+    "attacker_flow_collected": 17.934,
+    "attacker_capacity_per_attack_edge": 0.0897,
+    "honest_flow_collected": 42.837,
+    "honest_collection_rate": 0.2142,
+    "attacker_influence_change_pct_vs_sumup": -0.33,
+    "honest_collection_change_pct_vs_sumup": -0.37,
+    "honest_collection_loss_pp_vs_sumup": 0.08,
+    "attacker_reduction_per_1pp_honest_lost": 4.125
+  },
+  "4_alpha1.0": {
+    "attacker_flow_collected": 17.912,
+    "attacker_capacity_per_attack_edge": 0.0896,
+    "honest_flow_collected": 42.783,
+    "honest_collection_rate": 0.2139,
+    "attacker_influence_change_pct_vs_sumup": -0.44,
+    "honest_collection_change_pct_vs_sumup": -0.51,
+    "honest_collection_loss_pp_vs_sumup": 0.11,
+    "attacker_reduction_per_1pp_honest_lost": 4.0
+  },
+  "4_alpha5.0": {
+    "attacker_flow_collected": 17.56,
+    "attacker_capacity_per_attack_edge": 0.0878,
+    "honest_flow_collected": 41.916,
+    "honest_collection_rate": 0.2096,
+    "attacker_influence_change_pct_vs_sumup": -2.44,
+    "honest_collection_change_pct_vs_sumup": -2.51,
+    "honest_collection_loss_pp_vs_sumup": 0.54,
+    "attacker_reduction_per_1pp_honest_lost": 4.519
+  },
+  "4_alpha20.0": {
+    "attacker_flow_collected": 16.24,
+    "attacker_capacity_per_attack_edge": 0.0812,
+    "honest_flow_collected": 38.662,
+    "honest_collection_rate": 0.1933,
+    "attacker_influence_change_pct_vs_sumup": -9.78,
+    "honest_collection_change_pct_vs_sumup": -10.09,
+    "honest_collection_loss_pp_vs_sumup": 2.17,
+    "attacker_reduction_per_1pp_honest_lost": 4.507
+  },
+  "4_alpha50.0": {
+    "attacker_flow_collected": 13.305,
+    "attacker_capacity_per_attack_edge": 0.0665,
+    "honest_flow_collected": 31.991,
+    "honest_collection_rate": 0.16,
+    "attacker_influence_change_pct_vs_sumup": -26.11,
+    "honest_collection_change_pct_vs_sumup": -25.58,
+    "honest_collection_loss_pp_vs_sumup": 5.5,
+    "attacker_reduction_per_1pp_honest_lost": 4.747
+  },
+  "5_percentile_rank_scaling": {
+    "attacker_flow_collected": 7.801,
+    "attacker_capacity_per_attack_edge": 0.039,
+    "honest_flow_collected": 17.689,
+    "honest_collection_rate": 0.0884,
+    "attacker_influence_change_pct_vs_sumup": -56.67,
+    "honest_collection_change_pct_vs_sumup": -58.88,
+    "honest_collection_loss_pp_vs_sumup": 12.66,
+    "attacker_reduction_per_1pp_honest_lost": 4.476
+  }
+}

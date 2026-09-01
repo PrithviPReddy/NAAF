@@ -1,0 +1,30 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Report / presentation deliverables (tracked outside this repo)
+*.docx
+*.pptx
+*.pdf
+
+# Local render/debug scratch
+slide-*.jpg
+*.thumbnails*.jpg

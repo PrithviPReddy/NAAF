@@ -1,0 +1,9 @@
+{
+  "scenario": "sparse",
+  "n_sybil_nodes": 25,
+  "n_seeds": 100,
+  "iterations": 12,
+  "roc_auc_degree_normalized": 0.7048,
+  "roc_auc_raw_trust_pre_normalization": 0.3852,
+  "top_25_highest_trust_sybil_fraction": 0.0
+}

@@ -1,0 +1,79 @@
+{
+  "scenario": "sparse",
+  "n_total_nodes": 4064,
+  "n_sybil_nodes": 25,
+  "collector": 158,
+  "C_max": 1000,
+  "n_attack_edges": 200,
+  "p_sybil_stats_all_nodes": {
+    "min": 0.00244,
+    "max": 0.02219,
+    "mean": 0.00598
+  },
+  "threshold_calibration": {
+    "method": "quantile of P(Sybil) among the revealed-HONEST training subset only -- no Sybil ground truth used",
+    "n_revealed_honest": 807,
+    "q_hi": 0.99,
+    "tau_hi": 0.018488,
+    "q_lo": 0.9,
+    "tau_lo": 0.010314,
+    "n_confident_sybil_nodes_flagged": 61
+  },
+  "boundary_detection_diagnostic_evaluation_only_not_used_to_set_tau": {
+    "n_edges_flagged_far_endpoint_in_Shat": 113,
+    "n_flagged_edges_that_are_true_attack_edges": 2,
+    "precision_flagged_edges_are_attack_edges": 0.0177,
+    "n_true_attack_edges_present_in_ticket_tree": 141,
+    "recall_of_true_attack_edges_flagged": 0.0142
+  },
+  "sumup_baseline": {
+    "attacker_flow_collected": 18,
+    "attacker_capacity_per_attack_edge": 0.09,
+    "honest_flow_collected": 43,
+    "honest_collection_rate": 0.215
+  },
+  "naaf_v1_raw_all_edges": {
+    "attacker_flow_collected": 17.912,
+    "attacker_capacity_per_attack_edge": 0.0896,
+    "honest_flow_collected": 42.783,
+    "honest_collection_rate": 0.2139
+  },
+  "naaf_b_boundary_primary": {
+    "attacker_flow_collected": 18,
+    "attacker_capacity_per_attack_edge": 0.09,
+    "honest_flow_collected": 43,
+    "honest_collection_rate": 0.215
+  },
+  "naaf_a_source_weighted_ablation": {
+    "attacker_flow_collected": 17.849,
+    "attacker_capacity_per_attack_edge": 0.0892,
+    "honest_flow_collected": 42.857,
+    "honest_collection_rate": 0.2143
+  },
+  "naaf_c_conservative_variant": {
+    "attacker_flow_collected": 17.88,
+    "attacker_capacity_per_attack_edge": 0.0894,
+    "honest_flow_collected": 42.481,
+    "honest_collection_rate": 0.2124
+  },
+  "naaf_v1_vs_sumup": {
+    "attacker_capacity_reduction_pct_vs_sumup": 0.44,
+    "honest_collection_change_pp_vs_sumup": -0.11,
+    "honest_collection_change_pct_vs_sumup": -0.51
+  },
+  "naaf_b_vs_sumup": {
+    "attacker_capacity_reduction_pct_vs_sumup": 0.0,
+    "honest_collection_change_pp_vs_sumup": 0.0,
+    "honest_collection_change_pct_vs_sumup": 0.0
+  },
+  "naaf_a_vs_sumup": {
+    "attacker_capacity_reduction_pct_vs_sumup": 0.89,
+    "honest_collection_change_pp_vs_sumup": -0.07,
+    "honest_collection_change_pct_vs_sumup": -0.33
+  },
+  "naaf_c_vs_sumup": {
+    "attacker_capacity_reduction_pct_vs_sumup": 0.67,
+    "honest_collection_change_pp_vs_sumup": -0.26,
+    "honest_collection_change_pct_vs_sumup": -1.21
+  }
+}

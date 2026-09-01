@@ -1,0 +1,14 @@
+{
+  "scenario": "sparse",
+  "n_sybil_nodes": 25,
+  "collector": 158,
+  "C_max": 1000,
+  "n_attack_edges": 200,
+  "n_sybil_voters": 25,
+  "attacker_flow_collected": 18,
+  "attacker_capacity_per_attack_edge": 0.09,
+  "n_honest_voters_sampled": 200,
+  "honest_flow_collected": 43,
+  "honest_collection_rate": 0.215,
+  "honest_collection_rate_full_turnout_4039_voters": 0.0612
+}

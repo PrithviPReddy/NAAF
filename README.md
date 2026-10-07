@@ -341,4 +341,4 @@ python 01_build_graph.py
   a stricter/adaptive threshold, or restricting throttling to true
   leaf/near-leaf boundary nodes rather than any confidently-flagged
   node) or whether Option A's empirically stronger and provably-safer
-  result reframes it as the primary formulation with B/C as ablations.
+  result reframes it as the primary formulation with B/C as ablations

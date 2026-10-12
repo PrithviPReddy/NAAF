@@ -1,0 +1,94 @@
+[gatv2_social_skip_e600] seed 0 done (tau {'0.9': 0.3454, '0.95': 0.5532, '0.97': 0.667, '0.98': 0.8248, '0.99': 0.9251, '0.995': 0.9457, '0.999': 0.9639})
+[gatv2_social_skip_e600] seed 1 done (tau {'0.9': 0.3976, '0.95': 0.6428, '0.97': 0.7396, '0.98': 0.7751, '0.99': 0.8649, '0.995': 0.9105, '0.999': 0.9601})
+[gatv2_social_skip_e600] seed 2 done (tau {'0.9': 0.2772, '0.95': 0.5206, '0.97': 0.7632, '0.98': 0.8545, '0.99': 0.924, '0.995': 0.9414, '0.999': 0.9667})
+[gatv2_social_skip_e600] seed 3 done (tau {'0.9': 0.2737, '0.95': 0.6, '0.97': 0.7362, '0.98': 0.814, '0.99': 0.9048, '0.995': 0.938, '0.999': 0.969})
+[gatv2_social_skip_e600] seed 4 done (tau {'0.9': 0.3359, '0.95': 0.5913, '0.97': 0.7155, '0.98': 0.7559, '0.99': 0.8714, '0.995': 0.9491, '0.999': 0.9757})
+
+[gatv2_social_skip_e600] val summary (mean over 5 splits):
+  method                   attacker/edge  bot votes acc.  honest rate  win(mean)  splits won
+  sumup                           0.0618           0.988        0.998      False         0/5
+  naaf_a                          0.0151           0.244        0.914      False         0/5
+  naaf_v1_edge                    0.0334           0.536        0.968      False         0/5
+  classifier_only@q0.9            0.0059           0.097        0.915      False         0/5
+  naaf_gated_hard@q0.9            0.0058           0.096        0.914      False         0/5
+  naaf_gated_soft@q0.9            0.0162           0.262        0.948      False         0/5
+  naaf_c@q0.9                     0.0058           0.096        0.914      False         0/5
+  naaf_b_edge@q0.9                0.0337           0.540        0.975      False         1/5
+  classifier_only@q0.95           0.0137           0.223        0.963      False         0/5
+  naaf_gated_hard@q0.95           0.0136           0.221        0.962      False         0/5
+  naaf_gated_soft@q0.95           0.0198           0.321        0.969      False         0/5
+  naaf_c@q0.95                    0.0093           0.153        0.942      False         0/5
+  naaf_b_edge@q0.95               0.0348           0.558        0.978      False         1/5
+  classifier_only@q0.97           0.0201           0.326        0.977      False         1/5
+  naaf_gated_hard@q0.97           0.0200           0.324        0.976      False         0/5
+  naaf_gated_soft@q0.97           0.0241           0.389        0.979      False         0/5
+  naaf_c@q0.97                    0.0119           0.193        0.950      False         0/5
+  naaf_b_edge@q0.97               0.0360           0.578        0.985      False         2/5
+  classifier_only@q0.98           0.0261           0.419        0.983      False         1/5
+  naaf_gated_hard@q0.98           0.0260           0.416        0.982      False         0/5
+  naaf_gated_soft@q0.98           0.0286           0.459        0.983      False         0/5
+  naaf_c@q0.98                    0.0139           0.225        0.955      False         0/5
+  naaf_b_edge@q0.98               0.0377           0.603        0.988       True         3/5
+  classifier_only@q0.99           0.0367           0.587        0.990       True         5/5
+  naaf_gated_hard@q0.99           0.0365           0.583        0.988       True         4/5
+  naaf_gated_soft@q0.99           0.0377           0.602        0.989       True         4/5
+  naaf_c@q0.99                    0.0166           0.268        0.960      False         0/5
+  naaf_b_edge@q0.99               0.0425           0.680        0.993       True         5/5
+  classifier_only@q0.995          0.0445           0.714        0.996       True         5/5
+  naaf_gated_hard@q0.995          0.0441           0.708        0.994       True         5/5
+  naaf_gated_soft@q0.995          0.0446           0.716        0.994       True         5/5
+  naaf_c@q0.995                   0.0180           0.291        0.962      False         0/5
+  naaf_b_edge@q0.995              0.0470           0.753        0.994       True         5/5
+  classifier_only@q0.999          0.0521           0.836        0.999       True         5/5
+  naaf_gated_hard@q0.999          0.0517           0.829        0.997       True         5/5
+  naaf_gated_soft@q0.999          0.0519           0.832        0.997       True         5/5
+  naaf_c@q0.999                   0.0194           0.314        0.964      False         0/5
+  naaf_b_edge@q0.999              0.0526           0.843        0.996       True         5/5
+Saved /Users/prithvipreddy/Desktop/Projects/Naaf-Implementation/results/real/naaf/naaf_gatv2_social_skip_e600_val.json
+[mlp_e600] seed 0 done (tau {'0.9': 0.3481, '0.95': 0.5419, '0.97': 0.8009, '0.98': 0.8505, '0.99': 0.9463, '0.995': 0.9709, '0.999': 0.9875})
+[mlp_e600] seed 1 done (tau {'0.9': 0.3807, '0.95': 0.6236, '0.97': 0.7232, '0.98': 0.8144, '0.99': 0.8596, '0.995': 0.9043, '0.999': 0.9335})
+[mlp_e600] seed 2 done (tau {'0.9': 0.2709, '0.95': 0.4661, '0.97': 0.7045, '0.98': 0.7743, '0.99': 0.8997, '0.995': 0.9624, '0.999': 0.9931})
+[mlp_e600] seed 3 done (tau {'0.9': 0.2971, '0.95': 0.5578, '0.97': 0.6897, '0.98': 0.7847, '0.99': 0.878, '0.995': 0.9018, '0.999': 0.9481})
+[mlp_e600] seed 4 done (tau {'0.9': 0.3541, '0.95': 0.5451, '0.97': 0.7475, '0.98': 0.8063, '0.99': 0.8506, '0.995': 0.885, '0.999': 0.9524})
+
+[mlp_e600] val summary (mean over 5 splits):
+  method                   attacker/edge  bot votes acc.  honest rate  win(mean)  splits won
+  sumup                           0.0618           0.988        0.998      False         0/5
+  naaf_a                          0.0174           0.279        0.917      False         0/5
+  naaf_v1_edge                    0.0367           0.586        0.970      False         0/5
+  classifier_only@q0.9            0.0071           0.113        0.927      False         0/5
+  naaf_gated_hard@q0.9            0.0070           0.112        0.926      False         0/5
+  naaf_gated_soft@q0.9            0.0187           0.299        0.954      False         0/5
+  naaf_c@q0.9                     0.0070           0.112        0.926      False         0/5
+  naaf_b_edge@q0.9                0.0370           0.591        0.976      False         1/5
+  classifier_only@q0.95           0.0148           0.237        0.961      False         0/5
+  naaf_gated_hard@q0.95           0.0147           0.236        0.959      False         0/5
+  naaf_gated_soft@q0.95           0.0222           0.356        0.968      False         0/5
+  naaf_c@q0.95                    0.0105           0.168        0.943      False         0/5
+  naaf_b_edge@q0.95               0.0377           0.604        0.981      False         1/5
+  classifier_only@q0.97           0.0249           0.402        0.978      False         1/5
+  naaf_gated_hard@q0.97           0.0248           0.400        0.976      False         0/5
+  naaf_gated_soft@q0.97           0.0288           0.463        0.979      False         0/5
+  naaf_c@q0.97                    0.0146           0.234        0.954      False         0/5
+  naaf_b_edge@q0.97               0.0397           0.636        0.985      False         1/5
+  classifier_only@q0.98           0.0313           0.502        0.986      False         2/5
+  naaf_gated_hard@q0.98           0.0311           0.500        0.984      False         2/5
+  naaf_gated_soft@q0.98           0.0336           0.539        0.986      False         2/5
+  naaf_c@q0.98                    0.0166           0.266        0.958      False         0/5
+  naaf_b_edge@q0.98               0.0414           0.663        0.989       True         3/5
+  classifier_only@q0.99           0.0404           0.646        0.993       True         5/5
+  naaf_gated_hard@q0.99           0.0402           0.642        0.991       True         5/5
+  naaf_gated_soft@q0.99           0.0413           0.661        0.992       True         5/5
+  naaf_c@q0.99                    0.0193           0.309        0.962      False         0/5
+  naaf_b_edge@q0.99               0.0450           0.719        0.993       True         5/5
+  classifier_only@q0.995          0.0464           0.743        0.997       True         5/5
+  naaf_gated_hard@q0.995          0.0459           0.735        0.995       True         5/5
+  naaf_gated_soft@q0.995          0.0466           0.746        0.995       True         5/5
+  naaf_c@q0.995                   0.0208           0.334        0.964      False         0/5
+  naaf_b_edge@q0.995              0.0484           0.774        0.996       True         5/5
+  classifier_only@q0.999          0.0535           0.856        0.999       True         5/5
+  naaf_gated_hard@q0.999          0.0529           0.846        0.997       True         5/5
+  naaf_gated_soft@q0.999          0.0531           0.850        0.997       True         5/5
+  naaf_c@q0.999                   0.0225           0.361        0.966      False         0/5
+  naaf_b_edge@q0.999              0.0537           0.859        0.996       True         5/5
+Saved /Users/prithvipreddy/Desktop/Projects/Naaf-Implementation/results/real/naaf/naaf_mlp_e600_val.json

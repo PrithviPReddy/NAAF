@@ -1,0 +1,17 @@
+[gatv2_social_skip_e600] seed 0 done (tau {'0.995': 0.9457})
+[gatv2_social_skip_e600] seed 1 done (tau {'0.995': 0.9105})
+[gatv2_social_skip_e600] seed 2 done (tau {'0.995': 0.9414})
+[gatv2_social_skip_e600] seed 3 done (tau {'0.995': 0.938})
+[gatv2_social_skip_e600] seed 4 done (tau {'0.995': 0.9491})
+
+[gatv2_social_skip_e600] test summary (mean over 5 splits):
+  method                   attacker/edge  bot votes acc.  honest rate  win(mean)  splits won
+  sumup                           0.0586           0.946        0.997      False         0/5
+  naaf_a                          0.0155           0.251        0.897      False         0/5
+  naaf_v1_edge                    0.0325           0.526        0.958      False         0/5
+  classifier_only@q0.995          0.0436           0.706        0.994       True         5/5
+  naaf_gated_hard@q0.995          0.0425           0.688        0.991       True         4/5
+  naaf_gated_soft@q0.995          0.0431           0.697        0.991       True         4/5
+  naaf_c@q0.995                   0.0181           0.293        0.942      False         0/5
+  naaf_b_edge@q0.995              0.0455           0.735        0.991       True         4/5
+Saved /Users/prithvipreddy/Desktop/Projects/Naaf-Implementation/results/real/naaf/naaf_gatv2_social_skip_e600_test.json

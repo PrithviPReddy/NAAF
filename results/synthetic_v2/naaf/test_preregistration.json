@@ -1,0 +1,10 @@
+{
+  "written_at": "2026-10-12T10:16:57Z",
+  "written_before_any_test_run_on_dense_or_sparse_v2": true,
+  "primary_method": "naaf_gated_hard@q0.995 (same configuration pre-registered for MGTAB; not re-selected on dense/sparse val)",
+  "classifier": "gatv2_social_skip (600 epochs, best val loss), structural features",
+  "scenarios": ["dense: 200 Sybils x 8 attack edges", "sparse: 25 Sybils x 8 attack edges"],
+  "C_max": 1000,
+  "voters": "200 sampled TEST humans + all TEST Sybils, per injected run seed 0-4",
+  "also_reported_same_run": "sumup, classifier_only@q0.995, other NAAF variants at q0.995"
+}

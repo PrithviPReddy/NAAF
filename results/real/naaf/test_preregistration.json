@@ -1,0 +1,12 @@
+{
+  "written_at": "2026-10-12T09:15:31Z",
+  "written_before_any_test_run": true,
+  "primary_method": "naaf_gated_hard@q0.995",
+  "classifier": "gatv2_social_skip_e600",
+  "C_max": 1000,
+  "voters": "200 sampled TEST humans + all TEST bots, per split seed 0-4",
+  "tau_calibration": "0.995 quantile of P(bot) among VAL humans of the same split",
+  "selection_rationale": "Among NAAF variants meeting the win rule on val mean, chosen for margin: val bot acceptance 0.708, honest 0.994 (SumUp val 0.988 / 0.998), won 5/5 val splits. q0.99 had lower bot acceptance (0.583) but sat exactly at the 1-pt honest limit and won only 4/5.",
+  "win_rule": "attacker capacity per attack edge < SumUp AND honest collection rate >= SumUp - 0.01",
+  "also_reported_same_run": "sumup, classifier_only@q0.995, and the other NAAF variants at q0.995 (secondary, not used for selection)"
+}

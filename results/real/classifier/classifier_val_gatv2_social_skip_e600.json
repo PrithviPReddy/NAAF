@@ -1,0 +1,102 @@
+{
+  "variant": "gatv2_social_skip",
+  "epochs": 600,
+  "device": "cpu",
+  "torch": "2.14.1",
+  "node_order": "sorted MGTAB ids of the social LCC (see mgtab_meta.json)",
+  "val_auc": {
+    "mean": 0.9614,
+    "std": 0.0087
+  },
+  "val_f1_at_0.5": {
+    "mean": 0.8271,
+    "std": 0.0232
+  },
+  "per_seed": [
+    {
+      "seed": 0,
+      "best_epoch": 334,
+      "val_loss": 0.2233,
+      "val_auc": 0.9599,
+      "val_f1_at_0.5": 0.8228,
+      "val_p_bot_humans": {
+        "median": 0.0101,
+        "p90": 0.3454,
+        "p99": 0.9251
+      },
+      "val_p_bot_bots": {
+        "p01": 0.038,
+        "p10": 0.3674,
+        "median": 0.803
+      }
+    },
+    {
+      "seed": 1,
+      "best_epoch": 286,
+      "val_loss": 0.2535,
+      "val_auc": 0.9485,
+      "val_f1_at_0.5": 0.7968,
+      "val_p_bot_humans": {
+        "median": 0.0141,
+        "p90": 0.3976,
+        "p99": 0.8649
+      },
+      "val_p_bot_bots": {
+        "p01": 0.0352,
+        "p10": 0.288,
+        "median": 0.8246
+      }
+    },
+    {
+      "seed": 2,
+      "best_epoch": 533,
+      "val_loss": 0.2018,
+      "val_auc": 0.9684,
+      "val_f1_at_0.5": 0.8449,
+      "val_p_bot_humans": {
+        "median": 0.0075,
+        "p90": 0.2772,
+        "p99": 0.924
+      },
+      "val_p_bot_bots": {
+        "p01": 0.0867,
+        "p10": 0.3652,
+        "median": 0.8793
+      }
+    },
+    {
+      "seed": 3,
+      "best_epoch": 598,
+      "val_loss": 0.1929,
+      "val_auc": 0.9705,
+      "val_f1_at_0.5": 0.8549,
+      "val_p_bot_humans": {
+        "median": 0.0038,
+        "p90": 0.2737,
+        "p99": 0.9048
+      },
+      "val_p_bot_bots": {
+        "p01": 0.0339,
+        "p10": 0.4516,
+        "median": 0.8999
+      }
+    },
+    {
+      "seed": 4,
+      "best_epoch": 572,
+      "val_loss": 0.225,
+      "val_auc": 0.9599,
+      "val_f1_at_0.5": 0.8162,
+      "val_p_bot_humans": {
+        "median": 0.0112,
+        "p90": 0.3359,
+        "p99": 0.8714
+      },
+      "val_p_bot_bots": {
+        "p01": 0.048,
+        "p10": 0.2886,
+        "median": 0.8765
+      }
+    }
+  ]
+}

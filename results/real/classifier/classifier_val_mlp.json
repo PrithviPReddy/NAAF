@@ -1,0 +1,101 @@
+{
+  "variant": "mlp",
+  "device": "cpu",
+  "torch": "2.14.1",
+  "node_order": "sorted MGTAB ids of the social LCC (see mgtab_meta.json)",
+  "val_auc": {
+    "mean": 0.9514,
+    "std": 0.0066
+  },
+  "val_f1_at_0.5": {
+    "mean": 0.7929,
+    "std": 0.0149
+  },
+  "per_seed": [
+    {
+      "seed": 0,
+      "best_epoch": 293,
+      "val_loss": 0.2627,
+      "val_auc": 0.9466,
+      "val_f1_at_0.5": 0.7769,
+      "val_p_bot_humans": {
+        "median": 0.0198,
+        "p90": 0.3909,
+        "p99": 0.9348
+      },
+      "val_p_bot_bots": {
+        "p01": 0.0565,
+        "p10": 0.3122,
+        "median": 0.78
+      }
+    },
+    {
+      "seed": 1,
+      "best_epoch": 298,
+      "val_loss": 0.2662,
+      "val_auc": 0.9424,
+      "val_f1_at_0.5": 0.7764,
+      "val_p_bot_humans": {
+        "median": 0.0147,
+        "p90": 0.3924,
+        "p99": 0.8621
+      },
+      "val_p_bot_bots": {
+        "p01": 0.0264,
+        "p10": 0.2867,
+        "median": 0.7693
+      }
+    },
+    {
+      "seed": 2,
+      "best_epoch": 266,
+      "val_loss": 0.2373,
+      "val_auc": 0.9571,
+      "val_f1_at_0.5": 0.8033,
+      "val_p_bot_humans": {
+        "median": 0.017,
+        "p90": 0.3206,
+        "p99": 0.885
+      },
+      "val_p_bot_bots": {
+        "p01": 0.0869,
+        "p10": 0.3011,
+        "median": 0.7585
+      }
+    },
+    {
+      "seed": 3,
+      "best_epoch": 296,
+      "val_loss": 0.2368,
+      "val_auc": 0.9547,
+      "val_f1_at_0.5": 0.8032,
+      "val_p_bot_humans": {
+        "median": 0.0122,
+        "p90": 0.3499,
+        "p99": 0.8726
+      },
+      "val_p_bot_bots": {
+        "p01": 0.0117,
+        "p10": 0.3065,
+        "median": 0.8359
+      }
+    },
+    {
+      "seed": 4,
+      "best_epoch": 290,
+      "val_loss": 0.2353,
+      "val_auc": 0.9564,
+      "val_f1_at_0.5": 0.8048,
+      "val_p_bot_humans": {
+        "median": 0.0142,
+        "p90": 0.3922,
+        "p99": 0.8461
+      },
+      "val_p_bot_bots": {
+        "p01": 0.0423,
+        "p10": 0.3583,
+        "median": 0.7784
+      }
+    }
+  ]
+}

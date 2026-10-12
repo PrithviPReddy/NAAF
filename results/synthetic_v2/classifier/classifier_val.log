@@ -1,0 +1,26 @@
+ dense gatv2_social_skip seed 0: epoch 590  val AUC 1.0000  Sybil median P 0.994  honest p99 P 0.006
+ dense gatv2_social_skip seed 1: epoch 531  val AUC 1.0000  Sybil median P 0.992  honest p99 P 0.003
+ dense gatv2_social_skip seed 2: epoch 588  val AUC 1.0000  Sybil median P 0.992  honest p99 P 0.005
+ dense gatv2_social_skip seed 3: epoch 499  val AUC 1.0000  Sybil median P 0.994  honest p99 P 0.003
+ dense gatv2_social_skip seed 4: epoch 572  val AUC 1.0000  Sybil median P 0.994  honest p99 P 0.003
+ dense               mlp seed 0: epoch 600  val AUC 1.0000  Sybil median P 0.970  honest p99 P 0.036
+ dense               mlp seed 1: epoch 600  val AUC 1.0000  Sybil median P 0.978  honest p99 P 0.037
+ dense               mlp seed 2: epoch 584  val AUC 1.0000  Sybil median P 0.973  honest p99 P 0.034
+ dense               mlp seed 3: epoch 600  val AUC 1.0000  Sybil median P 0.977  honest p99 P 0.033
+ dense               mlp seed 4: epoch 600  val AUC 1.0000  Sybil median P 0.973  honest p99 P 0.028
+sparse gatv2_social_skip seed 0: epoch 522  val AUC 1.0000  Sybil median P 0.937  honest p99 P 0.006
+sparse gatv2_social_skip seed 1: epoch 567  val AUC 1.0000  Sybil median P 0.940  honest p99 P 0.007
+sparse gatv2_social_skip seed 2: epoch 439  val AUC 1.0000  Sybil median P 0.952  honest p99 P 0.007
+sparse gatv2_social_skip seed 3: epoch 517  val AUC 1.0000  Sybil median P 0.906  honest p99 P 0.002
+sparse gatv2_social_skip seed 4: epoch  82  val AUC 0.9975  Sybil median P 0.635  honest p99 P 0.021
+sparse               mlp seed 0: epoch 600  val AUC 1.0000  Sybil median P 0.672  honest p99 P 0.053
+sparse               mlp seed 1: epoch 598  val AUC 1.0000  Sybil median P 0.724  honest p99 P 0.039
+sparse               mlp seed 2: epoch 600  val AUC 1.0000  Sybil median P 0.698  honest p99 P 0.047
+sparse               mlp seed 3: epoch 597  val AUC 1.0000  Sybil median P 0.732  honest p99 P 0.038
+sparse               mlp seed 4: epoch 597  val AUC 1.0000  Sybil median P 0.729  honest p99 P 0.047
+
+Val AUC summary:
+     dense_gatv2_social_skip: 1.0000 +/- 0.0000
+                   dense_mlp: 1.0000 +/- 0.0000
+    sparse_gatv2_social_skip: 0.9995 +/- 0.0011
+                  sparse_mlp: 1.0000 +/- 0.0000

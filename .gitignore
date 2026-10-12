@@ -28,3 +28,7 @@ Thumbs.db
 # Local render/debug scratch
 slide-*.jpg
 *.thumbnails*.jpg
+# Real-dataset downloads (MGTAB / Cresci-15: CC BY-NC-ND 4.0, do not redistribute)
+data/real/
+# Synthetic v2 injections (regenerable: src/synthetic_v2/01_make_scenarios.py)
+data/synthetic_v2/

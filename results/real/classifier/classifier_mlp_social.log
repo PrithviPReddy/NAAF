@@ -1,0 +1,16 @@
+9434 nodes; social edges (directed both ways): 662492; all-relation edges: 2809424; device: cpu
+          mlp seed 0: epoch 293  val AUC 0.9466  F1 0.7769  humans p99 P(bot) 0.935  bots median P(bot) 0.780
+          mlp seed 1: epoch 298  val AUC 0.9424  F1 0.7764  humans p99 P(bot) 0.862  bots median P(bot) 0.769
+          mlp seed 2: epoch 266  val AUC 0.9571  F1 0.8033  humans p99 P(bot) 0.885  bots median P(bot) 0.758
+          mlp seed 3: epoch 296  val AUC 0.9547  F1 0.8032  humans p99 P(bot) 0.873  bots median P(bot) 0.836
+          mlp seed 4: epoch 290  val AUC 0.9564  F1 0.8048  humans p99 P(bot) 0.846  bots median P(bot) 0.778
+ gatv2_social seed 0: epoch 300  val AUC 0.9242  F1 0.7724  humans p99 P(bot) 0.757  bots median P(bot) 0.666
+ gatv2_social seed 1: epoch 298  val AUC 0.9150  F1 0.7526  humans p99 P(bot) 0.841  bots median P(bot) 0.664
+ gatv2_social seed 2: epoch 298  val AUC 0.9274  F1 0.6748  humans p99 P(bot) 0.754  bots median P(bot) 0.551
+ gatv2_social seed 3: epoch 281  val AUC 0.9567  F1 0.8016  humans p99 P(bot) 0.825  bots median P(bot) 0.785
+ gatv2_social seed 4: epoch 300  val AUC 0.9372  F1 0.7483  humans p99 P(bot) 0.793  bots median P(bot) 0.628
+
+Val summary (mean +/- std over 5 splits):
+            mlp: AUC 0.9514 +/- 0.0066   F1 0.7929 +/- 0.0149
+   gatv2_social: AUC 0.9321 +/- 0.0159   F1 0.7499 +/- 0.0470
+Saved /Users/prithvipreddy/Desktop/Projects/Naaf-Implementation/results/real/classifier

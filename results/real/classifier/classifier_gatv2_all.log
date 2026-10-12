@@ -1,0 +1,10 @@
+9434 nodes; social edges (directed both ways): 662492; all-relation edges: 2809424; device: cuda
+    gatv2_all seed 0: epoch 190  val AUC 0.9166  F1 0.7472  humans p99 P(bot) 0.813  bots median P(bot) 0.677
+    gatv2_all seed 1: epoch 235  val AUC 0.8761  F1 0.6452  humans p99 P(bot) 0.803  bots median P(bot) 0.750
+    gatv2_all seed 2: epoch 298  val AUC 0.9501  F1 0.8131  humans p99 P(bot) 0.886  bots median P(bot) 0.853
+    gatv2_all seed 3: epoch 267  val AUC 0.8874  F1 0.7013  humans p99 P(bot) 0.757  bots median P(bot) 0.701
+    gatv2_all seed 4: epoch 138  val AUC 0.8198  F1 0.5751  humans p99 P(bot) 0.867  bots median P(bot) 0.584
+
+Val summary (mean +/- std over 5 splits):
+      gatv2_all: AUC 0.8900 +/- 0.0486   F1 0.6964 +/- 0.0916
+Saved /content/naaf/results/real/classifier

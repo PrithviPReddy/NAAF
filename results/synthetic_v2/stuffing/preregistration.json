@@ -1,0 +1,11 @@
+{
+  "written_at": "2026-10-12T09:33:39Z",
+  "written_before_any_classifier_training_or_evaluation_on_this_scenario": true,
+  "scenario": "500 Sybils behind 50 attack edges (50 distinct honest users -> 50 distinct gateway Sybils), internal ER p=0.05, SNAP Facebook honest graph, 5 injections (seeds 0-4), stratified 70/10/20",
+  "classifier": "BotGATv2Skip on structural features, 600 epochs, best val loss (same as dense/sparse v2)",
+  "primary_method": "naaf_gated_hard with tau = 0.995 quantile of P(bot) over val humans (q fixed from the MGTAB choice; not tuned here)",
+  "evasion": "fraction f in {0, .25, .5, .75, 1} of Sybil voters take the score of a random honest user; nested evader sets",
+  "C_max": "1000 primary, 5000 sensitivity",
+  "claim": "for every f, NAAF accepts <= the Sybil votes of BOTH SumUp and classifier-only (mean over 5 injections)",
+  "also_reported": "honest collection rate for every method; NAAF-A; val and test both reported because nothing is tuned on val"
+}

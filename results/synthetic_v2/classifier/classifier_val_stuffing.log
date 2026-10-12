@@ -1,0 +1,8 @@
+stuffing gatv2_social_skip seed 0: epoch 600  val AUC 1.0000  Sybil median P 0.998  honest p99 P 0.003
+stuffing gatv2_social_skip seed 1: epoch 505  val AUC 1.0000  Sybil median P 0.997  honest p99 P 0.005
+stuffing gatv2_social_skip seed 2: epoch 600  val AUC 1.0000  Sybil median P 0.997  honest p99 P 0.004
+stuffing gatv2_social_skip seed 3: epoch 495  val AUC 1.0000  Sybil median P 0.998  honest p99 P 0.004
+stuffing gatv2_social_skip seed 4: epoch 600  val AUC 1.0000  Sybil median P 0.998  honest p99 P 0.005
+
+Val AUC summary:
+  stuffing_gatv2_social_skip: 1.0000 +/- 0.0000

@@ -1,0 +1,46 @@
+{
+  "dense_gatv2_social_skip": {
+    "val_auc_mean": 1.0,
+    "val_auc_std": 0.0,
+    "val_auc_per_seed": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "dense_mlp": {
+    "val_auc_mean": 1.0,
+    "val_auc_std": 0.0,
+    "val_auc_per_seed": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "sparse_gatv2_social_skip": {
+    "val_auc_mean": 0.9995,
+    "val_auc_std": 0.0011,
+    "val_auc_per_seed": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.9975
+    ]
+  },
+  "sparse_mlp": {
+    "val_auc_mean": 1.0,
+    "val_auc_std": 0.0,
+    "val_auc_per_seed": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+[dense/gatv2_social_skip] seed 0 done: 40 Sybil voters, 320 attack edges
+[dense/gatv2_social_skip] seed 1 done: 40 Sybil voters, 320 attack edges
+[dense/gatv2_social_skip] seed 2 done: 40 Sybil voters, 320 attack edges
+[dense/gatv2_social_skip] seed 3 done: 40 Sybil voters, 320 attack edges
+[dense/gatv2_social_skip] seed 4 done: 40 Sybil voters, 320 attack edges
+
+[dense/gatv2_social_skip] test summary (mean over 5 injected runs):
+  method                   attacker/edge  bot votes acc.  honest rate  win(mean)  runs won
+  sumup                           0.1187           0.950        0.510      False       0/5
+  naaf_a                          0.0016           0.013        0.510       True       5/5
+  naaf_v1_edge                    0.0028           0.022        0.196      False       0/5
+  classifier_only@q0.995          0.0006           0.005        0.989       True       5/5
+  naaf_gated_hard@q0.995          0.0006           0.005        0.503       True       4/5
+  naaf_gated_soft@q0.995          0.0016           0.013        0.510       True       5/5
+  naaf_c@q0.995                   0.0006           0.005        0.494      False       1/5
+  naaf_b_edge@q0.995              0.0028           0.022        0.196      False       0/5
+Saved /Users/prithvipreddy/Desktop/Projects/Naaf-Implementation/results/synthetic_v2/naaf/naaf_dense_gatv2_social_skip_test.json
+[sparse/gatv2_social_skip] seed 0 done: 5 Sybil voters, 40 attack edges
+[sparse/gatv2_social_skip] seed 1 done: 5 Sybil voters, 40 attack edges
+[sparse/gatv2_social_skip] seed 2 done: 5 Sybil voters, 40 attack edges
+[sparse/gatv2_social_skip] seed 3 done: 5 Sybil voters, 40 attack edges
+[sparse/gatv2_social_skip] seed 4 done: 5 Sybil voters, 40 attack edges
+
+[sparse/gatv2_social_skip] test summary (mean over 5 injected runs):
+  method                   attacker/edge  bot votes acc.  honest rate  win(mean)  runs won
+  sumup                           0.1200           0.960        0.268      False       0/5
+  naaf_a                          0.0175           0.140        0.268       True       5/5
+  naaf_v1_edge                    0.0526           0.421        0.222      False       1/5
+  classifier_only@q0.995          0.0000           0.000        0.993       True       5/5
+  naaf_gated_hard@q0.995          0.0000           0.000        0.265       True       5/5
+  naaf_gated_soft@q0.995          0.0175           0.140        0.268       True       5/5
+  naaf_c@q0.995                   0.0000           0.000        0.263       True       4/5
+  naaf_b_edge@q0.995              0.0526           0.421        0.222      False       1/5
+Saved /Users/prithvipreddy/Desktop/Projects/Naaf-Implementation/results/synthetic_v2/naaf/naaf_sparse_gatv2_social_skip_test.json

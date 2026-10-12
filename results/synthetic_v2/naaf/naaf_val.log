@@ -1,0 +1,94 @@
+[dense/gatv2_social_skip] seed 0 done: 20 Sybil voters, 160 attack edges
+[dense/gatv2_social_skip] seed 1 done: 20 Sybil voters, 160 attack edges
+[dense/gatv2_social_skip] seed 2 done: 20 Sybil voters, 160 attack edges
+[dense/gatv2_social_skip] seed 3 done: 20 Sybil voters, 160 attack edges
+[dense/gatv2_social_skip] seed 4 done: 20 Sybil voters, 160 attack edges
+
+[dense/gatv2_social_skip] val summary (mean over 5 injected runs):
+  method                   attacker/edge  bot votes acc.  honest rate  win(mean)  runs won
+  sumup                           0.1225           0.980        0.505      False       0/5
+  naaf_a                          0.0008           0.007        0.505       True       5/5
+  naaf_v1_edge                    0.0040           0.032        0.196      False       0/5
+  classifier_only@q0.9            0.0000           0.000        0.910       True       5/5
+  naaf_gated_hard@q0.9            0.0000           0.000        0.459      False       0/5
+  naaf_gated_soft@q0.9            0.0008           0.007        0.505       True       5/5
+  naaf_c@q0.9                     0.0000           0.000        0.459      False       0/5
+  naaf_b_edge@q0.9                0.0040           0.032        0.196      False       0/5
+  classifier_only@q0.95           0.0000           0.000        0.953       True       5/5
+  naaf_gated_hard@q0.95           0.0000           0.000        0.479      False       0/5
+  naaf_gated_soft@q0.95           0.0008           0.007        0.505       True       5/5
+  naaf_c@q0.95                    0.0000           0.000        0.472      False       0/5
+  naaf_b_edge@q0.95               0.0040           0.032        0.196      False       0/5
+  classifier_only@q0.97           0.0000           0.000        0.968       True       5/5
+  naaf_gated_hard@q0.97           0.0000           0.000        0.487      False       2/5
+  naaf_gated_soft@q0.97           0.0008           0.007        0.505       True       5/5
+  naaf_c@q0.97                    0.0000           0.000        0.478      False       0/5
+  naaf_b_edge@q0.97               0.0040           0.032        0.196      False       0/5
+  classifier_only@q0.98           0.0000           0.000        0.981       True       5/5
+  naaf_gated_hard@q0.98           0.0000           0.000        0.493      False       3/5
+  naaf_gated_soft@q0.98           0.0008           0.007        0.505       True       5/5
+  naaf_c@q0.98                    0.0000           0.000        0.484      False       0/5
+  naaf_b_edge@q0.98               0.0040           0.032        0.196      False       0/5
+  classifier_only@q0.99           0.0000           0.000        0.989       True       5/5
+  naaf_gated_hard@q0.99           0.0000           0.000        0.500       True       5/5
+  naaf_gated_soft@q0.99           0.0008           0.007        0.505       True       5/5
+  naaf_c@q0.99                    0.0000           0.000        0.489      False       2/5
+  naaf_b_edge@q0.99               0.0040           0.032        0.196      False       0/5
+  classifier_only@q0.995          0.0000           0.000        0.992       True       5/5
+  naaf_gated_hard@q0.995          0.0000           0.000        0.501       True       5/5
+  naaf_gated_soft@q0.995          0.0008           0.007        0.505       True       5/5
+  naaf_c@q0.995                   0.0000           0.000        0.492      False       2/5
+  naaf_b_edge@q0.995              0.0040           0.032        0.196      False       0/5
+  classifier_only@q0.999          0.0000           0.000        0.997       True       5/5
+  naaf_gated_hard@q0.999          0.0000           0.000        0.504       True       5/5
+  naaf_gated_soft@q0.999          0.0008           0.007        0.505       True       5/5
+  naaf_c@q0.999                   0.0000           0.000        0.499       True       4/5
+  naaf_b_edge@q0.999              0.0040           0.032        0.196      False       0/5
+Saved /Users/prithvipreddy/Desktop/Projects/Naaf-Implementation/results/synthetic_v2/naaf/naaf_dense_gatv2_social_skip_val.json
+[sparse/gatv2_social_skip] seed 0 done: 3 Sybil voters, 24 attack edges
+[sparse/gatv2_social_skip] seed 1 done: 3 Sybil voters, 24 attack edges
+[sparse/gatv2_social_skip] seed 2 done: 3 Sybil voters, 24 attack edges
+[sparse/gatv2_social_skip] seed 3 done: 3 Sybil voters, 24 attack edges
+[sparse/gatv2_social_skip] seed 4 done: 3 Sybil voters, 24 attack edges
+
+[sparse/gatv2_social_skip] val summary (mean over 5 injected runs):
+  method                   attacker/edge  bot votes acc.  honest rate  win(mean)  runs won
+  sumup                           0.1250           1.000        0.287      False       0/5
+  naaf_a                          0.0177           0.141        0.287       True       5/5
+  naaf_v1_edge                    0.0618           0.494        0.238      False       1/5
+  classifier_only@q0.9            0.0000           0.000        0.897       True       5/5
+  naaf_gated_hard@q0.9            0.0000           0.000        0.251      False       0/5
+  naaf_gated_soft@q0.9            0.0177           0.141        0.287       True       5/5
+  naaf_c@q0.9                     0.0000           0.000        0.251      False       0/5
+  naaf_b_edge@q0.9                0.0618           0.494        0.238      False       1/5
+  classifier_only@q0.95           0.0000           0.000        0.952       True       5/5
+  naaf_gated_hard@q0.95           0.0000           0.000        0.276      False       3/5
+  naaf_gated_soft@q0.95           0.0177           0.141        0.287       True       5/5
+  naaf_c@q0.95                    0.0000           0.000        0.268      False       2/5
+  naaf_b_edge@q0.95               0.0618           0.494        0.238      False       1/5
+  classifier_only@q0.97           0.0000           0.000        0.968       True       5/5
+  naaf_gated_hard@q0.97           0.0000           0.000        0.281       True       5/5
+  naaf_gated_soft@q0.97           0.0177           0.141        0.287       True       5/5
+  naaf_c@q0.97                    0.0000           0.000        0.275      False       3/5
+  naaf_b_edge@q0.97               0.0618           0.494        0.238      False       1/5
+  classifier_only@q0.98           0.0000           0.000        0.976       True       5/5
+  naaf_gated_hard@q0.98           0.0000           0.000        0.283       True       5/5
+  naaf_gated_soft@q0.98           0.0177           0.141        0.287       True       5/5
+  naaf_c@q0.98                    0.0000           0.000        0.279       True       4/5
+  naaf_b_edge@q0.98               0.0618           0.494        0.238      False       1/5
+  classifier_only@q0.99           0.0000           0.000        0.987       True       5/5
+  naaf_gated_hard@q0.99           0.0000           0.000        0.283       True       5/5
+  naaf_gated_soft@q0.99           0.0177           0.141        0.287       True       5/5
+  naaf_c@q0.99                    0.0000           0.000        0.281       True       4/5
+  naaf_b_edge@q0.99               0.0618           0.494        0.238      False       1/5
+  classifier_only@q0.995          0.0000           0.000        0.993       True       5/5
+  naaf_gated_hard@q0.995          0.0000           0.000        0.285       True       5/5
+  naaf_gated_soft@q0.995          0.0177           0.141        0.287       True       5/5
+  naaf_c@q0.995                   0.0000           0.000        0.283       True       4/5
+  naaf_b_edge@q0.995              0.0618           0.494        0.238      False       1/5
+  classifier_only@q0.999          0.0083           0.067        0.996       True       5/5
+  naaf_gated_hard@q0.999          0.0083           0.067        0.287       True       5/5
+  naaf_gated_soft@q0.999          0.0220           0.176        0.287       True       5/5
+  naaf_c@q0.999                   0.0008           0.006        0.286       True       5/5
+  naaf_b_edge@q0.999              0.0622           0.497        0.238      False       1/5
+Saved /Users/prithvipreddy/Desktop/Projects/Naaf-Implementation/results/synthetic_v2/naaf/naaf_sparse_gatv2_social_skip_val.json

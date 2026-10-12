@@ -1,0 +1,101 @@
+{
+  "variant": "gatv2_all",
+  "device": "cuda",
+  "torch": "2.11.0+cu130",
+  "node_order": "sorted MGTAB ids of the social LCC (see mgtab_meta.json)",
+  "val_auc": {
+    "mean": 0.89,
+    "std": 0.0486
+  },
+  "val_f1_at_0.5": {
+    "mean": 0.6964,
+    "std": 0.0916
+  },
+  "per_seed": [
+    {
+      "seed": 0,
+      "best_epoch": 190,
+      "val_loss": 0.3431,
+      "val_auc": 0.9166,
+      "val_f1_at_0.5": 0.7472,
+      "val_p_bot_humans": {
+        "median": 0.0863,
+        "p90": 0.5396,
+        "p99": 0.8131
+      },
+      "val_p_bot_bots": {
+        "p01": 0.0308,
+        "p10": 0.4531,
+        "median": 0.6774
+      }
+    },
+    {
+      "seed": 1,
+      "best_epoch": 235,
+      "val_loss": 0.4509,
+      "val_auc": 0.8761,
+      "val_f1_at_0.5": 0.6452,
+      "val_p_bot_humans": {
+        "median": 0.1173,
+        "p90": 0.746,
+        "p99": 0.8031
+      },
+      "val_p_bot_bots": {
+        "p01": 0.0656,
+        "p10": 0.5758,
+        "median": 0.75
+      }
+    },
+    {
+      "seed": 2,
+      "best_epoch": 298,
+      "val_loss": 0.2577,
+      "val_auc": 0.9501,
+      "val_f1_at_0.5": 0.8131,
+      "val_p_bot_humans": {
+        "median": 0.0593,
+        "p90": 0.4216,
+        "p99": 0.8862
+      },
+      "val_p_bot_bots": {
+        "p01": 0.0677,
+        "p10": 0.3918,
+        "median": 0.8529
+      }
+    },
+    {
+      "seed": 3,
+      "best_epoch": 267,
+      "val_loss": 0.3872,
+      "val_auc": 0.8874,
+      "val_f1_at_0.5": 0.7013,
+      "val_p_bot_humans": {
+        "median": 0.0774,
+        "p90": 0.6881,
+        "p99": 0.757
+      },
+      "val_p_bot_bots": {
+        "p01": 0.0357,
+        "p10": 0.4536,
+        "median": 0.7008
+      }
+    },
+    {
+      "seed": 4,
+      "best_epoch": 138,
+      "val_loss": 0.4575,
+      "val_auc": 0.8198,
+      "val_f1_at_0.5": 0.5751,
+      "val_p_bot_humans": {
+        "median": 0.1047,
+        "p90": 0.7075,
+        "p99": 0.8671
+      },
+      "val_p_bot_bots": {
+        "p01": 0.0532,
+        "p10": 0.1994,
+        "median": 0.5835
+      }
+    }
+  ]
+}

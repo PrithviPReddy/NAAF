@@ -1,0 +1,87 @@
+MGTAB social LCC: 9434 nodes, 331246 edges, 2471 bots
+  seed 0  C_max= 500: attacker/attack-edge=0.0502  bot votes accepted=0.855  honest rate=0.995
+  seed 0  C_max=1000: attacker/attack-edge=0.0551  bot votes accepted=0.937  honest rate=0.995
+  seed 0  C_max=2000: attacker/attack-edge=0.0569  bot votes accepted=0.968  honest rate=0.995
+  seed 0  C_max=5000: attacker/attack-edge=0.0578  bot votes accepted=0.984  honest rate=1.000
+seed 0: collector 469 (deg 25, depth 5), 495 bot voters, 8421 attack edges
+  seed 1  C_max= 500: attacker/attack-edge=0.0436  bot votes accepted=0.739  honest rate=1.000
+  seed 1  C_max=1000: attacker/attack-edge=0.0545  bot votes accepted=0.925  honest rate=1.000
+  seed 1  C_max=2000: attacker/attack-edge=0.0583  bot votes accepted=0.990  honest rate=1.000
+  seed 1  C_max=5000: attacker/attack-edge=0.0583  bot votes accepted=0.990  honest rate=1.000
+seed 1: collector 9 (deg 26, depth 5), 495 bot voters, 8401 attack edges
+  seed 2  C_max= 500: attacker/attack-edge=0.0664  bot votes accepted=0.929  honest rate=0.995
+  seed 2  C_max=1000: attacker/attack-edge=0.0696  bot votes accepted=0.974  honest rate=0.995
+  seed 2  C_max=2000: attacker/attack-edge=0.0698  bot votes accepted=0.978  honest rate=0.995
+  seed 2  C_max=5000: attacker/attack-edge=0.0700  bot votes accepted=0.980  honest rate=1.000
+seed 2: collector 544 (deg 25, depth 5), 495 bot voters, 6930 attack edges
+  seed 3  C_max= 500: attacker/attack-edge=0.0482  bot votes accepted=0.840  honest rate=0.995
+  seed 3  C_max=1000: attacker/attack-edge=0.0556  bot votes accepted=0.970  honest rate=0.995
+  seed 3  C_max=2000: attacker/attack-edge=0.0561  bot votes accepted=0.978  honest rate=0.995
+  seed 3  C_max=5000: attacker/attack-edge=0.0564  bot votes accepted=0.984  honest rate=0.995
+seed 3: collector 250 (deg 26, depth 5), 495 bot voters, 8632 attack edges
+  seed 4  C_max= 500: attacker/attack-edge=0.0488  bot votes accepted=0.776  honest rate=0.960
+  seed 4  C_max=1000: attacker/attack-edge=0.0581  bot votes accepted=0.923  honest rate=1.000
+  seed 4  C_max=2000: attacker/attack-edge=0.0626  bot votes accepted=0.994  honest rate=1.000
+  seed 4  C_max=5000: attacker/attack-edge=0.0626  bot votes accepted=0.994  honest rate=1.000
+seed 4: collector 9 (deg 26, depth 5), 495 bot voters, 7865 attack edges
+
+Summary (mean +/- std over 5 splits):
+{
+  "500": {
+    "attacker_capacity_per_attack_edge": {
+      "mean": 0.0514,
+      "std": 0.0087
+    },
+    "bot_vote_acceptance_rate": {
+      "mean": 0.8279,
+      "std": 0.0736
+    },
+    "honest_collection_rate": {
+      "mean": 0.989,
+      "std": 0.0164
+    }
+  },
+  "1000": {
+    "attacker_capacity_per_attack_edge": {
+      "mean": 0.0586,
+      "std": 0.0063
+    },
+    "bot_vote_acceptance_rate": {
+      "mean": 0.9459,
+      "std": 0.0242
+    },
+    "honest_collection_rate": {
+      "mean": 0.997,
+      "std": 0.0027
+    }
+  },
+  "2000": {
+    "attacker_capacity_per_attack_edge": {
+      "mean": 0.0607,
+      "std": 0.0057
+    },
+    "bot_vote_acceptance_rate": {
+      "mean": 0.9814,
+      "std": 0.0105
+    },
+    "honest_collection_rate": {
+      "mean": 0.997,
+      "std": 0.0027
+    }
+  },
+  "5000": {
+    "attacker_capacity_per_attack_edge": {
+      "mean": 0.061,
+      "std": 0.0055
+    },
+    "bot_vote_acceptance_rate": {
+      "mean": 0.9862,
+      "std": 0.0056
+    },
+    "honest_collection_rate": {
+      "mean": 0.999,
+      "std": 0.0022
+    }
+  }
+}
+Saved /Users/prithvipreddy/Desktop/Projects/Naaf-Implementation/results/real/sumup_mgtab.json

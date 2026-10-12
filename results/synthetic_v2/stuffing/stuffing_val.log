@@ -1,0 +1,23 @@
+seed 0 done: 50 Sybil voters, tau 0.0042
+seed 1 done: 50 Sybil voters, tau 0.0305
+seed 2 done: 50 Sybil voters, tau 0.0277
+seed 3 done: 50 Sybil voters, tau 0.0065
+seed 4 done: 50 Sybil voters, tau 0.0089
+
+val, C_max=1000 (mean of 5 injections) -- Sybil votes accepted (%) / honest collected (%)
+  evasion f           SumUp      Classifier      NAAF gated          NAAF-A   NAAF<=both?
+        0.0    52.0 / 20.4     0.0 / 99.7     0.0 / 20.4     0.3 / 20.4   True
+       0.25    52.0 / 20.4    24.0 / 99.7    21.2 / 20.4    21.3 / 20.4   True
+        0.5    52.0 / 20.4    50.0 / 99.7    36.8 / 20.4    36.9 / 20.4   True
+       0.75    52.0 / 20.4    76.0 / 99.7    46.0 / 20.4    46.0 / 20.4   True
+        1.0    52.0 / 20.4   100.0 / 99.7    52.0 / 20.4    52.0 / 20.4   True
+
+val, C_max=5000 (mean of 5 injections) -- Sybil votes accepted (%) / honest collected (%)
+  evasion f           SumUp      Classifier      NAAF gated          NAAF-A   NAAF<=both?
+        0.0    80.4 / 27.0     0.0 / 99.7     0.0 / 27.0     0.3 / 27.0   True
+       0.25    80.4 / 27.0    24.0 / 99.7    23.2 / 27.0    23.4 / 27.0   True
+        0.5    80.4 / 27.0    50.0 / 99.7    48.0 / 27.0    48.1 / 27.0   True
+       0.75    80.4 / 27.0    76.0 / 99.7    67.2 / 27.0    67.2 / 27.0   True
+        1.0    80.4 / 27.0   100.0 / 99.7    80.4 / 27.0    80.4 / 27.0   True
+
+Saved /Users/prithvipreddy/Desktop/Projects/Naaf-Implementation/results/synthetic_v2/stuffing/stuffing_val.json

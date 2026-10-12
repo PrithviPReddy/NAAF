@@ -1,0 +1,2043 @@
+{
+  "scenario": "dense",
+  "classifier": "dense_gatv2_social_skip",
+  "eval": "val",
+  "C_max": 1000,
+  "quantiles": [
+    0.9,
+    0.95,
+    0.97,
+    0.98,
+    0.99,
+    0.995,
+    0.999
+  ],
+  "win_rule": "attacker/edge < SumUp and honest rate >= SumUp - 0.01",
+  "summary_over_seeds": {
+    "sumup": {
+      "attacker_capacity_per_attack_edge": {
+        "mean": 0.1225,
+        "std": 0.0035
+      },
+      "bot_vote_acceptance_rate": {
+        "mean": 0.98,
+        "std": 0.0274
+      },
+      "honest_collection_rate": {
+        "mean": 0.505,
+        "std": 0.0905
+      },
+      "splits_won": 0,
+      "wins_on_mean": false
+    },
+    "naaf_a": {
+      "attacker_capacity_per_attack_edge": {
+        "mean": 0.0008,
+        "std": 0.0002
+      },
+      "bot_vote_acceptance_rate": {
+        "mean": 0.0069,
+        "std": 0.0013
+      },
+      "honest_collection_rate": {
+        "mean": 0.5048,
+        "std": 0.0906
+      },
+      "splits_won": 5,
+      "wins_on_mean": true
+    },
+    "naaf_v1_edge": {
+      "attacker_capacity_per_attack_edge": {
+        "mean": 0.004,
+        "std": 0.0023
+      },
+      "bot_vote_acceptance_rate": {
+        "mean": 0.0323,
+        "std": 0.0183
+      },
+      "honest_collection_rate": {
+        "mean": 0.1962,
+        "std": 0.0673
+      },
+      "splits_won": 0,
+      "wins_on_mean": false
+    },
+    "classifier_only@q0.9": {
+      "attacker_capacity_per_attack_edge": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "bot_vote_acceptance_rate": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "honest_collection_rate": {
+        "mean": 0.91,
+        "std": 0.0112
+      },
+      "splits_won": 5,
+      "wins_on_mean": true
+    },
+    "naaf_gated_hard@q0.9": {
+      "attacker_capacity_per_attack_edge": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "bot_vote_acceptance_rate": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "honest_collection_rate": {
+        "mean": 0.459,
+        "std": 0.0885
+      },
+      "splits_won": 0,
+      "wins_on_mean": false
+    },
+    "naaf_gated_soft@q0.9": {
+      "attacker_capacity_per_attack_edge": {
+        "mean": 0.0008,
+        "std": 0.0002
+      },
+      "bot_vote_acceptance_rate": {
+        "mean": 0.0069,
+        "std": 0.0013
+      },
+      "honest_collection_rate": {
+        "mean": 0.5048,
+        "std": 0.0906
+      },
+      "splits_won": 5,
+      "wins_on_mean": true
+    },
+    "naaf_c@q0.9": {
+      "attacker_capacity_per_attack_edge": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "bot_vote_acceptance_rate": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "honest_collection_rate": {
+        "mean": 0.459,
+        "std": 0.0885
+      },
+      "splits_won": 0,
+      "wins_on_mean": false
+    },
+    "naaf_b_edge@q0.9": {
+      "attacker_capacity_per_attack_edge": {
+        "mean": 0.004,
+        "std": 0.0023
+      },
+      "bot_vote_acceptance_rate": {
+        "mean": 0.0323,
+        "std": 0.0183
+      },
+      "honest_collection_rate": {
+        "mean": 0.1962,
+        "std": 0.0673
+      },
+      "splits_won": 0,
+      "wins_on_mean": false
+    },
+    "classifier_only@q0.95": {
+      "attacker_capacity_per_attack_edge": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "bot_vote_acceptance_rate": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "honest_collection_rate": {
+        "mean": 0.953,
+        "std": 0.0057
+      },
+      "splits_won": 5,
+      "wins_on_mean": true
+    },
+    "naaf_gated_hard@q0.95": {
+      "attacker_capacity_per_attack_edge": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "bot_vote_acceptance_rate": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "honest_collection_rate": {
+        "mean": 0.479,
+        "std": 0.0897
+      },
+      "splits_won": 0,
+      "wins_on_mean": false
+    },
+    "naaf_gated_soft@q0.95": {
+      "attacker_capacity_per_attack_edge": {
+        "mean": 0.0008,
+        "std": 0.0002
+      },
+      "bot_vote_acceptance_rate": {
+        "mean": 0.0069,
+        "std": 0.0013
+      },
+      "honest_collection_rate": {
+        "mean": 0.5048,
+        "std": 0.0906
+      },
+      "splits_won": 5,
+      "wins_on_mean": true
+    },
+    "naaf_c@q0.95": {
+      "attacker_capacity_per_attack_edge": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "bot_vote_acceptance_rate": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "honest_collection_rate": {
+        "mean": 0.4725,
+        "std": 0.0853
+      },
+      "splits_won": 0,
+      "wins_on_mean": false
+    },
+    "naaf_b_edge@q0.95": {
+      "attacker_capacity_per_attack_edge": {
+        "mean": 0.004,
+        "std": 0.0023
+      },
+      "bot_vote_acceptance_rate": {
+        "mean": 0.0323,
+        "std": 0.0183
+      },
+      "honest_collection_rate": {
+        "mean": 0.1962,
+        "std": 0.0673
+      },
+      "splits_won": 0,
+      "wins_on_mean": false
+    },
+    "classifier_only@q0.97": {
+      "attacker_capacity_per_attack_edge": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "bot_vote_acceptance_rate": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "honest_collection_rate": {
+        "mean": 0.968,
+        "std": 0.0057
+      },
+      "splits_won": 5,
+      "wins_on_mean": true
+    },
+    "naaf_gated_hard@q0.97": {
+      "attacker_capacity_per_attack_edge": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "bot_vote_acceptance_rate": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "honest_collection_rate": {
+        "mean": 0.487,
+        "std": 0.087
+      },
+      "splits_won": 2,
+      "wins_on_mean": false
+    },
+    "naaf_gated_soft@q0.97": {
+      "attacker_capacity_per_attack_edge": {
+        "mean": 0.0008,
+        "std": 0.0002
+      },
+      "bot_vote_acceptance_rate": {
+        "mean": 0.0069,
+        "std": 0.0013
+      },
+      "honest_collection_rate": {
+        "mean": 0.5048,
+        "std": 0.0906
+      },
+      "splits_won": 5,
+      "wins_on_mean": true
+    },
+    "naaf_c@q0.97": {
+      "attacker_capacity_per_attack_edge": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "bot_vote_acceptance_rate": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "honest_collection_rate": {
+        "mean": 0.4785,
+        "std": 0.0857
+      },
+      "splits_won": 0,
+      "wins_on_mean": false
+    },
+    "naaf_b_edge@q0.97": {
+      "attacker_capacity_per_attack_edge": {
+        "mean": 0.004,
+        "std": 0.0023
+      },
+      "bot_vote_acceptance_rate": {
+        "mean": 0.0323,
+        "std": 0.0183
+      },
+      "honest_collection_rate": {
+        "mean": 0.1962,
+        "std": 0.0673
+      },
+      "splits_won": 0,
+      "wins_on_mean": false
+    },
+    "classifier_only@q0.98": {
+      "attacker_capacity_per_attack_edge": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "bot_vote_acceptance_rate": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "honest_collection_rate": {
+        "mean": 0.981,
+        "std": 0.0065
+      },
+      "splits_won": 5,
+      "wins_on_mean": true
+    },
+    "naaf_gated_hard@q0.98": {
+      "attacker_capacity_per_attack_edge": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "bot_vote_acceptance_rate": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "honest_collection_rate": {
+        "mean": 0.493,
+        "std": 0.0886
+      },
+      "splits_won": 3,
+      "wins_on_mean": false
+    },
+    "naaf_gated_soft@q0.98": {
+      "attacker_capacity_per_attack_edge": {
+        "mean": 0.0008,
+        "std": 0.0002
+      },
+      "bot_vote_acceptance_rate": {
+        "mean": 0.0069,
+        "std": 0.0013
+      },
+      "honest_collection_rate": {
+        "mean": 0.5049,
+        "std": 0.0906
+      },
+      "splits_won": 5,
+      "wins_on_mean": true
+    },
+    "naaf_c@q0.98": {
+      "attacker_capacity_per_attack_edge": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "bot_vote_acceptance_rate": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "honest_collection_rate": {
+        "mean": 0.4837,
+        "std": 0.0867
+      },
+      "splits_won": 0,
+      "wins_on_mean": false
+    },
+    "naaf_b_edge@q0.98": {
+      "attacker_capacity_per_attack_edge": {
+        "mean": 0.004,
+        "std": 0.0023
+      },
+      "bot_vote_acceptance_rate": {
+        "mean": 0.0323,
+        "std": 0.0183
+      },
+      "honest_collection_rate": {
+        "mean": 0.1962,
+        "std": 0.0673
+      },
+      "splits_won": 0,
+      "wins_on_mean": false
+    },
+    "classifier_only@q0.99": {
+      "attacker_capacity_per_attack_edge": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "bot_vote_acceptance_rate": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "honest_collection_rate": {
+        "mean": 0.989,
+        "std": 0.0042
+      },
+      "splits_won": 5,
+      "wins_on_mean": true
+    },
+    "naaf_gated_hard@q0.99": {
+      "attacker_capacity_per_attack_edge": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "bot_vote_acceptance_rate": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "honest_collection_rate": {
+        "mean": 0.5,
+        "std": 0.0903
+      },
+      "splits_won": 5,
+      "wins_on_mean": true
+    },
+    "naaf_gated_soft@q0.99": {
+      "attacker_capacity_per_attack_edge": {
+        "mean": 0.0008,
+        "std": 0.0002
+      },
+      "bot_vote_acceptance_rate": {
+        "mean": 0.0069,
+        "std": 0.0013
+      },
+      "honest_collection_rate": {
+        "mean": 0.5049,
+        "std": 0.0907
+      },
+      "splits_won": 5,
+      "wins_on_mean": true
+    },
+    "naaf_c@q0.99": {
+      "attacker_capacity_per_attack_edge": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "bot_vote_acceptance_rate": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "honest_collection_rate": {
+        "mean": 0.489,
+        "std": 0.0872
+      },
+      "splits_won": 2,
+      "wins_on_mean": false
+    },
+    "naaf_b_edge@q0.99": {
+      "attacker_capacity_per_attack_edge": {
+        "mean": 0.004,
+        "std": 0.0023
+      },
+      "bot_vote_acceptance_rate": {
+        "mean": 0.0323,
+        "std": 0.0183
+      },
+      "honest_collection_rate": {
+        "mean": 0.1963,
+        "std": 0.0674
+      },
+      "splits_won": 0,
+      "wins_on_mean": false
+    },
+    "classifier_only@q0.995": {
+      "attacker_capacity_per_attack_edge": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "bot_vote_acceptance_rate": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "honest_collection_rate": {
+        "mean": 0.992,
+        "std": 0.0027
+      },
+      "splits_won": 5,
+      "wins_on_mean": true
+    },
+    "naaf_gated_hard@q0.995": {
+      "attacker_capacity_per_attack_edge": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "bot_vote_acceptance_rate": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "honest_collection_rate": {
+        "mean": 0.501,
+        "std": 0.09
+      },
+      "splits_won": 5,
+      "wins_on_mean": true
+    },
+    "naaf_gated_soft@q0.995": {
+      "attacker_capacity_per_attack_edge": {
+        "mean": 0.0008,
+        "std": 0.0002
+      },
+      "bot_vote_acceptance_rate": {
+        "mean": 0.0069,
+        "std": 0.0013
+      },
+      "honest_collection_rate": {
+        "mean": 0.5049,
+        "std": 0.0907
+      },
+      "splits_won": 5,
+      "wins_on_mean": true
+    },
+    "naaf_c@q0.995": {
+      "attacker_capacity_per_attack_edge": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "bot_vote_acceptance_rate": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "honest_collection_rate": {
+        "mean": 0.4924,
+        "std": 0.0875
+      },
+      "splits_won": 2,
+      "wins_on_mean": false
+    },
+    "naaf_b_edge@q0.995": {
+      "attacker_capacity_per_attack_edge": {
+        "mean": 0.004,
+        "std": 0.0023
+      },
+      "bot_vote_acceptance_rate": {
+        "mean": 0.0323,
+        "std": 0.0183
+      },
+      "honest_collection_rate": {
+        "mean": 0.1963,
+        "std": 0.0673
+      },
+      "splits_won": 0,
+      "wins_on_mean": false
+    },
+    "classifier_only@q0.999": {
+      "attacker_capacity_per_attack_edge": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "bot_vote_acceptance_rate": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "honest_collection_rate": {
+        "mean": 0.997,
+        "std": 0.0027
+      },
+      "splits_won": 5,
+      "wins_on_mean": true
+    },
+    "naaf_gated_hard@q0.999": {
+      "attacker_capacity_per_attack_edge": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "bot_vote_acceptance_rate": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "honest_collection_rate": {
+        "mean": 0.504,
+        "std": 0.0922
+      },
+      "splits_won": 5,
+      "wins_on_mean": true
+    },
+    "naaf_gated_soft@q0.999": {
+      "attacker_capacity_per_attack_edge": {
+        "mean": 0.0008,
+        "std": 0.0002
+      },
+      "bot_vote_acceptance_rate": {
+        "mean": 0.0069,
+        "std": 0.0013
+      },
+      "honest_collection_rate": {
+        "mean": 0.5049,
+        "std": 0.0907
+      },
+      "splits_won": 5,
+      "wins_on_mean": true
+    },
+    "naaf_c@q0.999": {
+      "attacker_capacity_per_attack_edge": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "bot_vote_acceptance_rate": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "honest_collection_rate": {
+        "mean": 0.4992,
+        "std": 0.0897
+      },
+      "splits_won": 4,
+      "wins_on_mean": true
+    },
+    "naaf_b_edge@q0.999": {
+      "attacker_capacity_per_attack_edge": {
+        "mean": 0.004,
+        "std": 0.0023
+      },
+      "bot_vote_acceptance_rate": {
+        "mean": 0.0323,
+        "std": 0.0183
+      },
+      "honest_collection_rate": {
+        "mean": 0.1964,
+        "std": 0.0674
+      },
+      "splits_won": 0,
+      "wins_on_mean": false
+    }
+  },
+  "per_split": [
+    {
+      "seed": 0,
+      "collector": 41,
+      "n_bot_voters": 20,
+      "n_attack_edges_of_voting_bots": 160,
+      "methods": {
+        "sumup": {
+          "attacker_flow_collected": 20.0,
+          "attacker_capacity_per_attack_edge": 0.125,
+          "bot_vote_acceptance_rate": 1.0,
+          "honest_collection_rate": 0.555,
+          "wins_vs_sumup": false
+        },
+        "naaf_a": {
+          "attacker_flow_collected": 0.13,
+          "attacker_capacity_per_attack_edge": 0.0008,
+          "bot_vote_acceptance_rate": 0.0065,
+          "honest_collection_rate": 0.5549,
+          "wins_vs_sumup": true
+        },
+        "naaf_v1_edge": {
+          "attacker_flow_collected": 0.502,
+          "attacker_capacity_per_attack_edge": 0.0031,
+          "bot_vote_acceptance_rate": 0.0251,
+          "honest_collection_rate": 0.1289,
+          "wins_vs_sumup": false
+        },
+        "classifier_only@q0.9": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.915,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_hard@q0.9": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.525,
+          "wins_vs_sumup": false
+        },
+        "naaf_gated_soft@q0.9": {
+          "attacker_flow_collected": 0.13,
+          "attacker_capacity_per_attack_edge": 0.0008,
+          "bot_vote_acceptance_rate": 0.0065,
+          "honest_collection_rate": 0.5549,
+          "wins_vs_sumup": true
+        },
+        "naaf_c@q0.9": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.525,
+          "wins_vs_sumup": false
+        },
+        "naaf_b_edge@q0.9": {
+          "attacker_flow_collected": 0.502,
+          "attacker_capacity_per_attack_edge": 0.0031,
+          "bot_vote_acceptance_rate": 0.0251,
+          "honest_collection_rate": 0.1289,
+          "wins_vs_sumup": false
+        },
+        "classifier_only@q0.95": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.955,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_hard@q0.95": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.535,
+          "wins_vs_sumup": false
+        },
+        "naaf_gated_soft@q0.95": {
+          "attacker_flow_collected": 0.13,
+          "attacker_capacity_per_attack_edge": 0.0008,
+          "bot_vote_acceptance_rate": 0.0065,
+          "honest_collection_rate": 0.5549,
+          "wins_vs_sumup": true
+        },
+        "naaf_c@q0.95": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.5313,
+          "wins_vs_sumup": false
+        },
+        "naaf_b_edge@q0.95": {
+          "attacker_flow_collected": 0.502,
+          "attacker_capacity_per_attack_edge": 0.0031,
+          "bot_vote_acceptance_rate": 0.0251,
+          "honest_collection_rate": 0.1289,
+          "wins_vs_sumup": false
+        },
+        "classifier_only@q0.97": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.965,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_hard@q0.97": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.54,
+          "wins_vs_sumup": false
+        },
+        "naaf_gated_soft@q0.97": {
+          "attacker_flow_collected": 0.13,
+          "attacker_capacity_per_attack_edge": 0.0008,
+          "bot_vote_acceptance_rate": 0.0065,
+          "honest_collection_rate": 0.5549,
+          "wins_vs_sumup": true
+        },
+        "naaf_c@q0.97": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.5349,
+          "wins_vs_sumup": false
+        },
+        "naaf_b_edge@q0.97": {
+          "attacker_flow_collected": 0.502,
+          "attacker_capacity_per_attack_edge": 0.0031,
+          "bot_vote_acceptance_rate": 0.0251,
+          "honest_collection_rate": 0.1289,
+          "wins_vs_sumup": false
+        },
+        "classifier_only@q0.98": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.975,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_hard@q0.98": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.54,
+          "wins_vs_sumup": false
+        },
+        "naaf_gated_soft@q0.98": {
+          "attacker_flow_collected": 0.13,
+          "attacker_capacity_per_attack_edge": 0.0008,
+          "bot_vote_acceptance_rate": 0.0065,
+          "honest_collection_rate": 0.5549,
+          "wins_vs_sumup": true
+        },
+        "naaf_c@q0.98": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.5371,
+          "wins_vs_sumup": false
+        },
+        "naaf_b_edge@q0.98": {
+          "attacker_flow_collected": 0.502,
+          "attacker_capacity_per_attack_edge": 0.0031,
+          "bot_vote_acceptance_rate": 0.0251,
+          "honest_collection_rate": 0.1289,
+          "wins_vs_sumup": false
+        },
+        "classifier_only@q0.99": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.985,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_hard@q0.99": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.55,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_soft@q0.99": {
+          "attacker_flow_collected": 0.13,
+          "attacker_capacity_per_attack_edge": 0.0008,
+          "bot_vote_acceptance_rate": 0.0065,
+          "honest_collection_rate": 0.555,
+          "wins_vs_sumup": true
+        },
+        "naaf_c@q0.99": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.5398,
+          "wins_vs_sumup": false
+        },
+        "naaf_b_edge@q0.99": {
+          "attacker_flow_collected": 0.502,
+          "attacker_capacity_per_attack_edge": 0.0031,
+          "bot_vote_acceptance_rate": 0.0251,
+          "honest_collection_rate": 0.1289,
+          "wins_vs_sumup": false
+        },
+        "classifier_only@q0.995": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.99,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_hard@q0.995": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.55,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_soft@q0.995": {
+          "attacker_flow_collected": 0.13,
+          "attacker_capacity_per_attack_edge": 0.0008,
+          "bot_vote_acceptance_rate": 0.0065,
+          "honest_collection_rate": 0.555,
+          "wins_vs_sumup": true
+        },
+        "naaf_c@q0.995": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.5409,
+          "wins_vs_sumup": false
+        },
+        "naaf_b_edge@q0.995": {
+          "attacker_flow_collected": 0.502,
+          "attacker_capacity_per_attack_edge": 0.0031,
+          "bot_vote_acceptance_rate": 0.0251,
+          "honest_collection_rate": 0.1289,
+          "wins_vs_sumup": false
+        },
+        "classifier_only@q0.999": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.995,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_hard@q0.999": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.555,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_soft@q0.999": {
+          "attacker_flow_collected": 0.13,
+          "attacker_capacity_per_attack_edge": 0.0008,
+          "bot_vote_acceptance_rate": 0.0065,
+          "honest_collection_rate": 0.555,
+          "wins_vs_sumup": true
+        },
+        "naaf_c@q0.999": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.5436,
+          "wins_vs_sumup": false
+        },
+        "naaf_b_edge@q0.999": {
+          "attacker_flow_collected": 0.502,
+          "attacker_capacity_per_attack_edge": 0.0031,
+          "bot_vote_acceptance_rate": 0.0251,
+          "honest_collection_rate": 0.1289,
+          "wins_vs_sumup": false
+        }
+      },
+      "tau": {
+        "0.9": 0.0005,
+        "0.95": 0.0017,
+        "0.97": 0.0027,
+        "0.98": 0.0044,
+        "0.99": 0.0056,
+        "0.995": 0.0062,
+        "0.999": 0.0075
+      }
+    },
+    {
+      "seed": 1,
+      "collector": 41,
+      "n_bot_voters": 20,
+      "n_attack_edges_of_voting_bots": 160,
+      "methods": {
+        "sumup": {
+          "attacker_flow_collected": 20.0,
+          "attacker_capacity_per_attack_edge": 0.125,
+          "bot_vote_acceptance_rate": 1.0,
+          "honest_collection_rate": 0.625,
+          "wins_vs_sumup": false
+        },
+        "naaf_a": {
+          "attacker_flow_collected": 0.167,
+          "attacker_capacity_per_attack_edge": 0.001,
+          "bot_vote_acceptance_rate": 0.0084,
+          "honest_collection_rate": 0.6249,
+          "wins_vs_sumup": true
+        },
+        "naaf_v1_edge": {
+          "attacker_flow_collected": 1.217,
+          "attacker_capacity_per_attack_edge": 0.0076,
+          "bot_vote_acceptance_rate": 0.0608,
+          "honest_collection_rate": 0.1741,
+          "wins_vs_sumup": false
+        },
+        "classifier_only@q0.9": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.915,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_hard@q0.9": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.57,
+          "wins_vs_sumup": false
+        },
+        "naaf_gated_soft@q0.9": {
+          "attacker_flow_collected": 0.167,
+          "attacker_capacity_per_attack_edge": 0.001,
+          "bot_vote_acceptance_rate": 0.0084,
+          "honest_collection_rate": 0.6249,
+          "wins_vs_sumup": true
+        },
+        "naaf_c@q0.9": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.57,
+          "wins_vs_sumup": false
+        },
+        "naaf_b_edge@q0.9": {
+          "attacker_flow_collected": 1.217,
+          "attacker_capacity_per_attack_edge": 0.0076,
+          "bot_vote_acceptance_rate": 0.0608,
+          "honest_collection_rate": 0.1741,
+          "wins_vs_sumup": false
+        },
+        "classifier_only@q0.95": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.96,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_hard@q0.95": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.6,
+          "wins_vs_sumup": false
+        },
+        "naaf_gated_soft@q0.95": {
+          "attacker_flow_collected": 0.167,
+          "attacker_capacity_per_attack_edge": 0.001,
+          "bot_vote_acceptance_rate": 0.0084,
+          "honest_collection_rate": 0.6249,
+          "wins_vs_sumup": true
+        },
+        "naaf_c@q0.95": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.5839,
+          "wins_vs_sumup": false
+        },
+        "naaf_b_edge@q0.95": {
+          "attacker_flow_collected": 1.217,
+          "attacker_capacity_per_attack_edge": 0.0076,
+          "bot_vote_acceptance_rate": 0.0608,
+          "honest_collection_rate": 0.1741,
+          "wins_vs_sumup": false
+        },
+        "classifier_only@q0.97": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.975,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_hard@q0.97": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.605,
+          "wins_vs_sumup": false
+        },
+        "naaf_gated_soft@q0.97": {
+          "attacker_flow_collected": 0.167,
+          "attacker_capacity_per_attack_edge": 0.001,
+          "bot_vote_acceptance_rate": 0.0084,
+          "honest_collection_rate": 0.6249,
+          "wins_vs_sumup": true
+        },
+        "naaf_c@q0.97": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.5909,
+          "wins_vs_sumup": false
+        },
+        "naaf_b_edge@q0.97": {
+          "attacker_flow_collected": 1.217,
+          "attacker_capacity_per_attack_edge": 0.0076,
+          "bot_vote_acceptance_rate": 0.0608,
+          "honest_collection_rate": 0.1741,
+          "wins_vs_sumup": false
+        },
+        "classifier_only@q0.98": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.99,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_hard@q0.98": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.615,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_soft@q0.98": {
+          "attacker_flow_collected": 0.167,
+          "attacker_capacity_per_attack_edge": 0.001,
+          "bot_vote_acceptance_rate": 0.0084,
+          "honest_collection_rate": 0.625,
+          "wins_vs_sumup": true
+        },
+        "naaf_c@q0.98": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.5991,
+          "wins_vs_sumup": false
+        },
+        "naaf_b_edge@q0.98": {
+          "attacker_flow_collected": 1.217,
+          "attacker_capacity_per_attack_edge": 0.0076,
+          "bot_vote_acceptance_rate": 0.0608,
+          "honest_collection_rate": 0.1741,
+          "wins_vs_sumup": false
+        },
+        "classifier_only@q0.99": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.995,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_hard@q0.99": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.62,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_soft@q0.99": {
+          "attacker_flow_collected": 0.167,
+          "attacker_capacity_per_attack_edge": 0.001,
+          "bot_vote_acceptance_rate": 0.0084,
+          "honest_collection_rate": 0.625,
+          "wins_vs_sumup": true
+        },
+        "naaf_c@q0.99": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.6061,
+          "wins_vs_sumup": false
+        },
+        "naaf_b_edge@q0.99": {
+          "attacker_flow_collected": 1.217,
+          "attacker_capacity_per_attack_edge": 0.0076,
+          "bot_vote_acceptance_rate": 0.0608,
+          "honest_collection_rate": 0.1741,
+          "wins_vs_sumup": false
+        },
+        "classifier_only@q0.995": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.995,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_hard@q0.995": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.62,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_soft@q0.995": {
+          "attacker_flow_collected": 0.167,
+          "attacker_capacity_per_attack_edge": 0.001,
+          "bot_vote_acceptance_rate": 0.0084,
+          "honest_collection_rate": 0.625,
+          "wins_vs_sumup": true
+        },
+        "naaf_c@q0.995": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.6095,
+          "wins_vs_sumup": false
+        },
+        "naaf_b_edge@q0.995": {
+          "attacker_flow_collected": 1.217,
+          "attacker_capacity_per_attack_edge": 0.0076,
+          "bot_vote_acceptance_rate": 0.0608,
+          "honest_collection_rate": 0.1741,
+          "wins_vs_sumup": false
+        },
+        "classifier_only@q0.999": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 1.0,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_hard@q0.999": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.625,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_soft@q0.999": {
+          "attacker_flow_collected": 0.167,
+          "attacker_capacity_per_attack_edge": 0.001,
+          "bot_vote_acceptance_rate": 0.0084,
+          "honest_collection_rate": 0.625,
+          "wins_vs_sumup": true
+        },
+        "naaf_c@q0.999": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.6202,
+          "wins_vs_sumup": true
+        },
+        "naaf_b_edge@q0.999": {
+          "attacker_flow_collected": 1.217,
+          "attacker_capacity_per_attack_edge": 0.0076,
+          "bot_vote_acceptance_rate": 0.0608,
+          "honest_collection_rate": 0.1742,
+          "wins_vs_sumup": false
+        }
+      },
+      "tau": {
+        "0.9": 0.0004,
+        "0.95": 0.001,
+        "0.97": 0.0014,
+        "0.98": 0.0022,
+        "0.99": 0.0033,
+        "0.995": 0.0042,
+        "0.999": 0.0127
+      }
+    },
+    {
+      "seed": 2,
+      "collector": 158,
+      "n_bot_voters": 20,
+      "n_attack_edges_of_voting_bots": 160,
+      "methods": {
+        "sumup": {
+          "attacker_flow_collected": 19.0,
+          "attacker_capacity_per_attack_edge": 0.1187,
+          "bot_vote_acceptance_rate": 0.95,
+          "honest_collection_rate": 0.385,
+          "wins_vs_sumup": false
+        },
+        "naaf_a": {
+          "attacker_flow_collected": 0.162,
+          "attacker_capacity_per_attack_edge": 0.001,
+          "bot_vote_acceptance_rate": 0.0081,
+          "honest_collection_rate": 0.3845,
+          "wins_vs_sumup": true
+        },
+        "naaf_v1_edge": {
+          "attacker_flow_collected": 0.219,
+          "attacker_capacity_per_attack_edge": 0.0014,
+          "bot_vote_acceptance_rate": 0.011,
+          "honest_collection_rate": 0.2161,
+          "wins_vs_sumup": false
+        },
+        "classifier_only@q0.9": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.915,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_hard@q0.9": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.36,
+          "wins_vs_sumup": false
+        },
+        "naaf_gated_soft@q0.9": {
+          "attacker_flow_collected": 0.162,
+          "attacker_capacity_per_attack_edge": 0.001,
+          "bot_vote_acceptance_rate": 0.0081,
+          "honest_collection_rate": 0.3845,
+          "wins_vs_sumup": true
+        },
+        "naaf_c@q0.9": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.36,
+          "wins_vs_sumup": false
+        },
+        "naaf_b_edge@q0.9": {
+          "attacker_flow_collected": 0.219,
+          "attacker_capacity_per_attack_edge": 0.0014,
+          "bot_vote_acceptance_rate": 0.011,
+          "honest_collection_rate": 0.2161,
+          "wins_vs_sumup": false
+        },
+        "classifier_only@q0.95": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.955,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_hard@q0.95": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.37,
+          "wins_vs_sumup": false
+        },
+        "naaf_gated_soft@q0.95": {
+          "attacker_flow_collected": 0.162,
+          "attacker_capacity_per_attack_edge": 0.001,
+          "bot_vote_acceptance_rate": 0.0081,
+          "honest_collection_rate": 0.3845,
+          "wins_vs_sumup": true
+        },
+        "naaf_c@q0.95": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.3685,
+          "wins_vs_sumup": false
+        },
+        "naaf_b_edge@q0.95": {
+          "attacker_flow_collected": 0.219,
+          "attacker_capacity_per_attack_edge": 0.0014,
+          "bot_vote_acceptance_rate": 0.011,
+          "honest_collection_rate": 0.2161,
+          "wins_vs_sumup": false
+        },
+        "classifier_only@q0.97": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.97,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_hard@q0.97": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.38,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_soft@q0.97": {
+          "attacker_flow_collected": 0.162,
+          "attacker_capacity_per_attack_edge": 0.001,
+          "bot_vote_acceptance_rate": 0.0081,
+          "honest_collection_rate": 0.3845,
+          "wins_vs_sumup": true
+        },
+        "naaf_c@q0.97": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.3705,
+          "wins_vs_sumup": false
+        },
+        "naaf_b_edge@q0.97": {
+          "attacker_flow_collected": 0.219,
+          "attacker_capacity_per_attack_edge": 0.0014,
+          "bot_vote_acceptance_rate": 0.011,
+          "honest_collection_rate": 0.2161,
+          "wins_vs_sumup": false
+        },
+        "classifier_only@q0.98": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.98,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_hard@q0.98": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.38,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_soft@q0.98": {
+          "attacker_flow_collected": 0.162,
+          "attacker_capacity_per_attack_edge": 0.001,
+          "bot_vote_acceptance_rate": 0.0081,
+          "honest_collection_rate": 0.3845,
+          "wins_vs_sumup": true
+        },
+        "naaf_c@q0.98": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.3736,
+          "wins_vs_sumup": false
+        },
+        "naaf_b_edge@q0.98": {
+          "attacker_flow_collected": 0.219,
+          "attacker_capacity_per_attack_edge": 0.0014,
+          "bot_vote_acceptance_rate": 0.011,
+          "honest_collection_rate": 0.2161,
+          "wins_vs_sumup": false
+        },
+        "classifier_only@q0.99": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.985,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_hard@q0.99": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.38,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_soft@q0.99": {
+          "attacker_flow_collected": 0.162,
+          "attacker_capacity_per_attack_edge": 0.001,
+          "bot_vote_acceptance_rate": 0.0081,
+          "honest_collection_rate": 0.3845,
+          "wins_vs_sumup": true
+        },
+        "naaf_c@q0.99": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.3768,
+          "wins_vs_sumup": true
+        },
+        "naaf_b_edge@q0.99": {
+          "attacker_flow_collected": 0.219,
+          "attacker_capacity_per_attack_edge": 0.0014,
+          "bot_vote_acceptance_rate": 0.011,
+          "honest_collection_rate": 0.2163,
+          "wins_vs_sumup": false
+        },
+        "classifier_only@q0.995": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.99,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_hard@q0.995": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.38,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_soft@q0.995": {
+          "attacker_flow_collected": 0.162,
+          "attacker_capacity_per_attack_edge": 0.001,
+          "bot_vote_acceptance_rate": 0.0081,
+          "honest_collection_rate": 0.3845,
+          "wins_vs_sumup": true
+        },
+        "naaf_c@q0.995": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.3773,
+          "wins_vs_sumup": true
+        },
+        "naaf_b_edge@q0.995": {
+          "attacker_flow_collected": 0.219,
+          "attacker_capacity_per_attack_edge": 0.0014,
+          "bot_vote_acceptance_rate": 0.011,
+          "honest_collection_rate": 0.2163,
+          "wins_vs_sumup": false
+        },
+        "classifier_only@q0.999": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.995,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_hard@q0.999": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.38,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_soft@q0.999": {
+          "attacker_flow_collected": 0.162,
+          "attacker_capacity_per_attack_edge": 0.001,
+          "bot_vote_acceptance_rate": 0.0081,
+          "honest_collection_rate": 0.3845,
+          "wins_vs_sumup": true
+        },
+        "naaf_c@q0.999": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.3798,
+          "wins_vs_sumup": true
+        },
+        "naaf_b_edge@q0.999": {
+          "attacker_flow_collected": 0.219,
+          "attacker_capacity_per_attack_edge": 0.0014,
+          "bot_vote_acceptance_rate": 0.011,
+          "honest_collection_rate": 0.2163,
+          "wins_vs_sumup": false
+        }
+      },
+      "tau": {
+        "0.9": 0.0005,
+        "0.95": 0.0012,
+        "0.97": 0.0017,
+        "0.98": 0.0023,
+        "0.99": 0.0042,
+        "0.995": 0.0049,
+        "0.999": 0.0574
+      }
+    },
+    {
+      "seed": 3,
+      "collector": 158,
+      "n_bot_voters": 20,
+      "n_attack_edges_of_voting_bots": 160,
+      "methods": {
+        "sumup": {
+          "attacker_flow_collected": 20.0,
+          "attacker_capacity_per_attack_edge": 0.125,
+          "bot_vote_acceptance_rate": 1.0,
+          "honest_collection_rate": 0.47,
+          "wins_vs_sumup": false
+        },
+        "naaf_a": {
+          "attacker_flow_collected": 0.118,
+          "attacker_capacity_per_attack_edge": 0.0007,
+          "bot_vote_acceptance_rate": 0.0059,
+          "honest_collection_rate": 0.47,
+          "wins_vs_sumup": true
+        },
+        "naaf_v1_edge": {
+          "attacker_flow_collected": 0.707,
+          "attacker_capacity_per_attack_edge": 0.0044,
+          "bot_vote_acceptance_rate": 0.0354,
+          "honest_collection_rate": 0.1593,
+          "wins_vs_sumup": false
+        },
+        "classifier_only@q0.9": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.915,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_hard@q0.9": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.45,
+          "wins_vs_sumup": false
+        },
+        "naaf_gated_soft@q0.9": {
+          "attacker_flow_collected": 0.118,
+          "attacker_capacity_per_attack_edge": 0.0007,
+          "bot_vote_acceptance_rate": 0.0059,
+          "honest_collection_rate": 0.47,
+          "wins_vs_sumup": true
+        },
+        "naaf_c@q0.9": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.45,
+          "wins_vs_sumup": false
+        },
+        "naaf_b_edge@q0.9": {
+          "attacker_flow_collected": 0.707,
+          "attacker_capacity_per_attack_edge": 0.0044,
+          "bot_vote_acceptance_rate": 0.0354,
+          "honest_collection_rate": 0.1593,
+          "wins_vs_sumup": false
+        },
+        "classifier_only@q0.95": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.95,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_hard@q0.95": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.455,
+          "wins_vs_sumup": false
+        },
+        "naaf_gated_soft@q0.95": {
+          "attacker_flow_collected": 0.118,
+          "attacker_capacity_per_attack_edge": 0.0007,
+          "bot_vote_acceptance_rate": 0.0059,
+          "honest_collection_rate": 0.47,
+          "wins_vs_sumup": true
+        },
+        "naaf_c@q0.95": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.4502,
+          "wins_vs_sumup": false
+        },
+        "naaf_b_edge@q0.95": {
+          "attacker_flow_collected": 0.707,
+          "attacker_capacity_per_attack_edge": 0.0044,
+          "bot_vote_acceptance_rate": 0.0354,
+          "honest_collection_rate": 0.1593,
+          "wins_vs_sumup": false
+        },
+        "classifier_only@q0.97": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.97,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_hard@q0.97": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.46,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_soft@q0.97": {
+          "attacker_flow_collected": 0.118,
+          "attacker_capacity_per_attack_edge": 0.0007,
+          "bot_vote_acceptance_rate": 0.0059,
+          "honest_collection_rate": 0.47,
+          "wins_vs_sumup": true
+        },
+        "naaf_c@q0.97": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.4548,
+          "wins_vs_sumup": false
+        },
+        "naaf_b_edge@q0.97": {
+          "attacker_flow_collected": 0.707,
+          "attacker_capacity_per_attack_edge": 0.0044,
+          "bot_vote_acceptance_rate": 0.0354,
+          "honest_collection_rate": 0.1593,
+          "wins_vs_sumup": false
+        },
+        "classifier_only@q0.98": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.985,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_hard@q0.98": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.465,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_soft@q0.98": {
+          "attacker_flow_collected": 0.118,
+          "attacker_capacity_per_attack_edge": 0.0007,
+          "bot_vote_acceptance_rate": 0.0059,
+          "honest_collection_rate": 0.47,
+          "wins_vs_sumup": true
+        },
+        "naaf_c@q0.98": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.4585,
+          "wins_vs_sumup": false
+        },
+        "naaf_b_edge@q0.98": {
+          "attacker_flow_collected": 0.707,
+          "attacker_capacity_per_attack_edge": 0.0044,
+          "bot_vote_acceptance_rate": 0.0354,
+          "honest_collection_rate": 0.1593,
+          "wins_vs_sumup": false
+        },
+        "classifier_only@q0.99": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.99,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_hard@q0.99": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.47,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_soft@q0.99": {
+          "attacker_flow_collected": 0.118,
+          "attacker_capacity_per_attack_edge": 0.0007,
+          "bot_vote_acceptance_rate": 0.0059,
+          "honest_collection_rate": 0.47,
+          "wins_vs_sumup": true
+        },
+        "naaf_c@q0.99": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.4615,
+          "wins_vs_sumup": true
+        },
+        "naaf_b_edge@q0.99": {
+          "attacker_flow_collected": 0.707,
+          "attacker_capacity_per_attack_edge": 0.0044,
+          "bot_vote_acceptance_rate": 0.0354,
+          "honest_collection_rate": 0.1593,
+          "wins_vs_sumup": false
+        },
+        "classifier_only@q0.995": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.99,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_hard@q0.995": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.47,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_soft@q0.995": {
+          "attacker_flow_collected": 0.118,
+          "attacker_capacity_per_attack_edge": 0.0007,
+          "bot_vote_acceptance_rate": 0.0059,
+          "honest_collection_rate": 0.47,
+          "wins_vs_sumup": true
+        },
+        "naaf_c@q0.995": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.4627,
+          "wins_vs_sumup": true
+        },
+        "naaf_b_edge@q0.995": {
+          "attacker_flow_collected": 0.707,
+          "attacker_capacity_per_attack_edge": 0.0044,
+          "bot_vote_acceptance_rate": 0.0354,
+          "honest_collection_rate": 0.1595,
+          "wins_vs_sumup": false
+        },
+        "classifier_only@q0.999": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.995,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_hard@q0.999": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.47,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_soft@q0.999": {
+          "attacker_flow_collected": 0.118,
+          "attacker_capacity_per_attack_edge": 0.0007,
+          "bot_vote_acceptance_rate": 0.0059,
+          "honest_collection_rate": 0.47,
+          "wins_vs_sumup": true
+        },
+        "naaf_c@q0.999": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.4651,
+          "wins_vs_sumup": true
+        },
+        "naaf_b_edge@q0.999": {
+          "attacker_flow_collected": 0.707,
+          "attacker_capacity_per_attack_edge": 0.0044,
+          "bot_vote_acceptance_rate": 0.0354,
+          "honest_collection_rate": 0.1595,
+          "wins_vs_sumup": false
+        }
+      },
+      "tau": {
+        "0.9": 0.0005,
+        "0.95": 0.001,
+        "0.97": 0.0015,
+        "0.98": 0.002,
+        "0.99": 0.0026,
+        "0.995": 0.0029,
+        "0.999": 0.0041
+      }
+    },
+    {
+      "seed": 4,
+      "collector": 369,
+      "n_bot_voters": 20,
+      "n_attack_edges_of_voting_bots": 160,
+      "methods": {
+        "sumup": {
+          "attacker_flow_collected": 19.0,
+          "attacker_capacity_per_attack_edge": 0.1187,
+          "bot_vote_acceptance_rate": 0.95,
+          "honest_collection_rate": 0.49,
+          "wins_vs_sumup": false
+        },
+        "naaf_a": {
+          "attacker_flow_collected": 0.115,
+          "attacker_capacity_per_attack_edge": 0.0007,
+          "bot_vote_acceptance_rate": 0.0057,
+          "honest_collection_rate": 0.4899,
+          "wins_vs_sumup": true
+        },
+        "naaf_v1_edge": {
+          "attacker_flow_collected": 0.581,
+          "attacker_capacity_per_attack_edge": 0.0036,
+          "bot_vote_acceptance_rate": 0.029,
+          "honest_collection_rate": 0.3028,
+          "wins_vs_sumup": false
+        },
+        "classifier_only@q0.9": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.89,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_hard@q0.9": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.39,
+          "wins_vs_sumup": false
+        },
+        "naaf_gated_soft@q0.9": {
+          "attacker_flow_collected": 0.115,
+          "attacker_capacity_per_attack_edge": 0.0007,
+          "bot_vote_acceptance_rate": 0.0057,
+          "honest_collection_rate": 0.4899,
+          "wins_vs_sumup": true
+        },
+        "naaf_c@q0.9": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.39,
+          "wins_vs_sumup": false
+        },
+        "naaf_b_edge@q0.9": {
+          "attacker_flow_collected": 0.581,
+          "attacker_capacity_per_attack_edge": 0.0036,
+          "bot_vote_acceptance_rate": 0.029,
+          "honest_collection_rate": 0.3028,
+          "wins_vs_sumup": false
+        },
+        "classifier_only@q0.95": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.945,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_hard@q0.95": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.435,
+          "wins_vs_sumup": false
+        },
+        "naaf_gated_soft@q0.95": {
+          "attacker_flow_collected": 0.115,
+          "attacker_capacity_per_attack_edge": 0.0007,
+          "bot_vote_acceptance_rate": 0.0057,
+          "honest_collection_rate": 0.4899,
+          "wins_vs_sumup": true
+        },
+        "naaf_c@q0.95": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.4284,
+          "wins_vs_sumup": false
+        },
+        "naaf_b_edge@q0.95": {
+          "attacker_flow_collected": 0.581,
+          "attacker_capacity_per_attack_edge": 0.0036,
+          "bot_vote_acceptance_rate": 0.029,
+          "honest_collection_rate": 0.3028,
+          "wins_vs_sumup": false
+        },
+        "classifier_only@q0.97": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.96,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_hard@q0.97": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.45,
+          "wins_vs_sumup": false
+        },
+        "naaf_gated_soft@q0.97": {
+          "attacker_flow_collected": 0.115,
+          "attacker_capacity_per_attack_edge": 0.0007,
+          "bot_vote_acceptance_rate": 0.0057,
+          "honest_collection_rate": 0.4899,
+          "wins_vs_sumup": true
+        },
+        "naaf_c@q0.97": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.4415,
+          "wins_vs_sumup": false
+        },
+        "naaf_b_edge@q0.97": {
+          "attacker_flow_collected": 0.581,
+          "attacker_capacity_per_attack_edge": 0.0036,
+          "bot_vote_acceptance_rate": 0.029,
+          "honest_collection_rate": 0.3028,
+          "wins_vs_sumup": false
+        },
+        "classifier_only@q0.98": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.975,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_hard@q0.98": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.465,
+          "wins_vs_sumup": false
+        },
+        "naaf_gated_soft@q0.98": {
+          "attacker_flow_collected": 0.115,
+          "attacker_capacity_per_attack_edge": 0.0007,
+          "bot_vote_acceptance_rate": 0.0057,
+          "honest_collection_rate": 0.4899,
+          "wins_vs_sumup": true
+        },
+        "naaf_c@q0.98": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.4502,
+          "wins_vs_sumup": false
+        },
+        "naaf_b_edge@q0.98": {
+          "attacker_flow_collected": 0.581,
+          "attacker_capacity_per_attack_edge": 0.0036,
+          "bot_vote_acceptance_rate": 0.029,
+          "honest_collection_rate": 0.3028,
+          "wins_vs_sumup": false
+        },
+        "classifier_only@q0.99": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.99,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_hard@q0.99": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.48,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_soft@q0.99": {
+          "attacker_flow_collected": 0.115,
+          "attacker_capacity_per_attack_edge": 0.0007,
+          "bot_vote_acceptance_rate": 0.0057,
+          "honest_collection_rate": 0.49,
+          "wins_vs_sumup": true
+        },
+        "naaf_c@q0.99": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.4608,
+          "wins_vs_sumup": false
+        },
+        "naaf_b_edge@q0.99": {
+          "attacker_flow_collected": 0.581,
+          "attacker_capacity_per_attack_edge": 0.0036,
+          "bot_vote_acceptance_rate": 0.029,
+          "honest_collection_rate": 0.3028,
+          "wins_vs_sumup": false
+        },
+        "classifier_only@q0.995": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.995,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_hard@q0.995": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.485,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_soft@q0.995": {
+          "attacker_flow_collected": 0.115,
+          "attacker_capacity_per_attack_edge": 0.0007,
+          "bot_vote_acceptance_rate": 0.0057,
+          "honest_collection_rate": 0.49,
+          "wins_vs_sumup": true
+        },
+        "naaf_c@q0.995": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.4714,
+          "wins_vs_sumup": false
+        },
+        "naaf_b_edge@q0.995": {
+          "attacker_flow_collected": 0.581,
+          "attacker_capacity_per_attack_edge": 0.0036,
+          "bot_vote_acceptance_rate": 0.029,
+          "honest_collection_rate": 0.3028,
+          "wins_vs_sumup": false
+        },
+        "classifier_only@q0.999": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 1.0,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_hard@q0.999": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.49,
+          "wins_vs_sumup": true
+        },
+        "naaf_gated_soft@q0.999": {
+          "attacker_flow_collected": 0.115,
+          "attacker_capacity_per_attack_edge": 0.0007,
+          "bot_vote_acceptance_rate": 0.0057,
+          "honest_collection_rate": 0.49,
+          "wins_vs_sumup": true
+        },
+        "naaf_c@q0.999": {
+          "attacker_flow_collected": 0,
+          "attacker_capacity_per_attack_edge": 0.0,
+          "bot_vote_acceptance_rate": 0.0,
+          "honest_collection_rate": 0.4871,
+          "wins_vs_sumup": true
+        },
+        "naaf_b_edge@q0.999": {
+          "attacker_flow_collected": 0.581,
+          "attacker_capacity_per_attack_edge": 0.0036,
+          "bot_vote_acceptance_rate": 0.029,
+          "honest_collection_rate": 0.3029,
+          "wins_vs_sumup": false
+        }
+      },
+      "tau": {
+        "0.9": 0.0,
+        "0.95": 0.0003,
+        "0.97": 0.0008,
+        "0.98": 0.0014,
+        "0.99": 0.0023,
+        "0.995": 0.0043,
+        "0.999": 0.0285
+      }
+    }
+  ]
+}

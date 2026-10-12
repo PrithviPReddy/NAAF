@@ -1,0 +1,290 @@
+{
+  "dense": {
+    "summary_mean_over_seeds": {
+      "with_sybils": {
+        "honest_rate": 0.51,
+        "bfs_depth": 5.6,
+        "voters_within_2_hops": 0.086
+      },
+      "honest_only": {
+        "honest_rate": 0.184,
+        "bfs_depth": 6.8,
+        "voters_within_2_hops": 0.085
+      }
+    },
+    "per_seed": [
+      {
+        "seed": 0,
+        "collector": 41,
+        "collector_degree": 25,
+        "attack_edges": 1600,
+        "with_sybils": {
+          "honest_rate": 0.54,
+          "bfs_depth": 5,
+          "voters_within_2_hops": 0.065
+        },
+        "honest_only": {
+          "honest_rate": 0.1,
+          "bfs_depth": 7,
+          "voters_within_2_hops": 0.06
+        }
+      },
+      {
+        "seed": 1,
+        "collector": 41,
+        "collector_degree": 25,
+        "attack_edges": 1600,
+        "with_sybils": {
+          "honest_rate": 0.595,
+          "bfs_depth": 5,
+          "voters_within_2_hops": 0.105
+        },
+        "honest_only": {
+          "honest_rate": 0.145,
+          "bfs_depth": 7,
+          "voters_within_2_hops": 0.105
+        }
+      },
+      {
+        "seed": 2,
+        "collector": 158,
+        "collector_degree": 25,
+        "attack_edges": 1600,
+        "with_sybils": {
+          "honest_rate": 0.445,
+          "bfs_depth": 6,
+          "voters_within_2_hops": 0.095
+        },
+        "honest_only": {
+          "honest_rate": 0.19,
+          "bfs_depth": 7,
+          "voters_within_2_hops": 0.095
+        }
+      },
+      {
+        "seed": 3,
+        "collector": 158,
+        "collector_degree": 25,
+        "attack_edges": 1600,
+        "with_sybils": {
+          "honest_rate": 0.52,
+          "bfs_depth": 6,
+          "voters_within_2_hops": 0.105
+        },
+        "honest_only": {
+          "honest_rate": 0.2,
+          "bfs_depth": 7,
+          "voters_within_2_hops": 0.105
+        }
+      },
+      {
+        "seed": 4,
+        "collector": 369,
+        "collector_degree": 26,
+        "attack_edges": 1600,
+        "with_sybils": {
+          "honest_rate": 0.45,
+          "bfs_depth": 6,
+          "voters_within_2_hops": 0.06
+        },
+        "honest_only": {
+          "honest_rate": 0.285,
+          "bfs_depth": 6,
+          "voters_within_2_hops": 0.06
+        }
+      }
+    ]
+  },
+  "sparse": {
+    "summary_mean_over_seeds": {
+      "with_sybils": {
+        "honest_rate": 0.268,
+        "bfs_depth": 6,
+        "voters_within_2_hops": 0.084
+      },
+      "honest_only": {
+        "honest_rate": 0.199,
+        "bfs_depth": 6.8,
+        "voters_within_2_hops": 0.084
+      }
+    },
+    "per_seed": [
+      {
+        "seed": 0,
+        "collector": 161,
+        "collector_degree": 25,
+        "attack_edges": 200,
+        "with_sybils": {
+          "honest_rate": 0.315,
+          "bfs_depth": 6,
+          "voters_within_2_hops": 0.075
+        },
+        "honest_only": {
+          "honest_rate": 0.22,
+          "bfs_depth": 7,
+          "voters_within_2_hops": 0.075
+        }
+      },
+      {
+        "seed": 1,
+        "collector": 158,
+        "collector_degree": 25,
+        "attack_edges": 200,
+        "with_sybils": {
+          "honest_rate": 0.28,
+          "bfs_depth": 6,
+          "voters_within_2_hops": 0.095
+        },
+        "honest_only": {
+          "honest_rate": 0.19,
+          "bfs_depth": 7,
+          "voters_within_2_hops": 0.095
+        }
+      },
+      {
+        "seed": 2,
+        "collector": 158,
+        "collector_degree": 25,
+        "attack_edges": 200,
+        "with_sybils": {
+          "honest_rate": 0.245,
+          "bfs_depth": 6,
+          "voters_within_2_hops": 0.105
+        },
+        "honest_only": {
+          "honest_rate": 0.2,
+          "bfs_depth": 7,
+          "voters_within_2_hops": 0.105
+        }
+      },
+      {
+        "seed": 3,
+        "collector": 158,
+        "collector_degree": 25,
+        "attack_edges": 200,
+        "with_sybils": {
+          "honest_rate": 0.235,
+          "bfs_depth": 6,
+          "voters_within_2_hops": 0.085
+        },
+        "honest_only": {
+          "honest_rate": 0.175,
+          "bfs_depth": 7,
+          "voters_within_2_hops": 0.085
+        }
+      },
+      {
+        "seed": 4,
+        "collector": 354,
+        "collector_degree": 26,
+        "attack_edges": 200,
+        "with_sybils": {
+          "honest_rate": 0.265,
+          "bfs_depth": 6,
+          "voters_within_2_hops": 0.06
+        },
+        "honest_only": {
+          "honest_rate": 0.21,
+          "bfs_depth": 6,
+          "voters_within_2_hops": 0.06
+        }
+      }
+    ]
+  },
+  "stuffing": {
+    "summary_mean_over_seeds": {
+      "with_sybils": {
+        "honest_rate": 0.2,
+        "bfs_depth": 6.8,
+        "voters_within_2_hops": 0.09
+      },
+      "honest_only": {
+        "honest_rate": 0.199,
+        "bfs_depth": 6.8,
+        "voters_within_2_hops": 0.09
+      }
+    },
+    "per_seed": [
+      {
+        "seed": 0,
+        "collector": 158,
+        "collector_degree": 25,
+        "attack_edges": 50,
+        "with_sybils": {
+          "honest_rate": 0.17,
+          "bfs_depth": 7,
+          "voters_within_2_hops": 0.075
+        },
+        "honest_only": {
+          "honest_rate": 0.17,
+          "bfs_depth": 7,
+          "voters_within_2_hops": 0.075
+        }
+      },
+      {
+        "seed": 1,
+        "collector": 158,
+        "collector_degree": 25,
+        "attack_edges": 50,
+        "with_sybils": {
+          "honest_rate": 0.2,
+          "bfs_depth": 7,
+          "voters_within_2_hops": 0.105
+        },
+        "honest_only": {
+          "honest_rate": 0.2,
+          "bfs_depth": 7,
+          "voters_within_2_hops": 0.105
+        }
+      },
+      {
+        "seed": 2,
+        "collector": 158,
+        "collector_degree": 25,
+        "attack_edges": 50,
+        "with_sybils": {
+          "honest_rate": 0.2,
+          "bfs_depth": 7,
+          "voters_within_2_hops": 0.105
+        },
+        "honest_only": {
+          "honest_rate": 0.2,
+          "bfs_depth": 7,
+          "voters_within_2_hops": 0.105
+        }
+      },
+      {
+        "seed": 3,
+        "collector": 158,
+        "collector_degree": 25,
+        "attack_edges": 50,
+        "with_sybils": {
+          "honest_rate": 0.195,
+          "bfs_depth": 7,
+          "voters_within_2_hops": 0.105
+        },
+        "honest_only": {
+          "honest_rate": 0.195,
+          "bfs_depth": 7,
+          "voters_within_2_hops": 0.105
+        }
+      },
+      {
+        "seed": 4,
+        "collector": 354,
+        "collector_degree": 26,
+        "attack_edges": 50,
+        "with_sybils": {
+          "honest_rate": 0.235,
+          "bfs_depth": 6,
+          "voters_within_2_hops": 0.06
+        },
+        "honest_only": {
+          "honest_rate": 0.23,
+          "bfs_depth": 6,
+          "voters_within_2_hops": 0.06
+        }
+      }
+    ]
+  }
+}

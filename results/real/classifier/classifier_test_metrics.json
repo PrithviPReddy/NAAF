@@ -1,0 +1,59 @@
+{
+  "note": "gatv2_all = 300 epochs (Step 5); the others = 600 epochs (Step 6a)",
+  "gatv2_social_skip_e600": {
+    "auc": {
+      "mean": 0.9584,
+      "std": 0.0045
+    },
+    "f1": {
+      "mean": 0.8172,
+      "std": 0.0177
+    },
+    "tpr_at_1pct_fpr": {
+      "mean": 0.4319,
+      "std": 0.0621
+    }
+  },
+  "mlp_e600": {
+    "auc": {
+      "mean": 0.9535,
+      "std": 0.0064
+    },
+    "f1": {
+      "mean": 0.8084,
+      "std": 0.0155
+    },
+    "tpr_at_1pct_fpr": {
+      "mean": 0.3802,
+      "std": 0.0759
+    }
+  },
+  "gatv2_social_e600": {
+    "auc": {
+      "mean": 0.9466,
+      "std": 0.0035
+    },
+    "f1": {
+      "mean": 0.8057,
+      "std": 0.0174
+    },
+    "tpr_at_1pct_fpr": {
+      "mean": 0.2909,
+      "std": 0.1243
+    }
+  },
+  "gatv2_all": {
+    "auc": {
+      "mean": 0.8997,
+      "std": 0.0366
+    },
+    "f1": {
+      "mean": 0.7011,
+      "std": 0.0874
+    },
+    "tpr_at_1pct_fpr": {
+      "mean": 0.2727,
+      "std": 0.1139
+    }
+  }
+}

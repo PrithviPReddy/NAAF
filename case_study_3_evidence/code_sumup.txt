@@ -1,0 +1,46 @@
+# SumUp (Tran et al., NSDI 2009) as implemented here: breadth-first ticket distribution sets
+# link capacity = 1 + tickets; votes are counted by exact max-flow from a super-source to the
+# collector. Every method in the paper reuses these functions unchanged.
+
+--- src/03_sumup_baseline.py, lines 29-55 ---
+  29  def ticket_distribution(G, levels, collector, c_max):
+  30      """
+  31      Level-order ticket cascade. Returns dict {(u, v): capacity} for every
+  32      edge with level[v] = level[u] + 1 (i.e. every 'forward' edge).
+  33      """
+  34      nodes_by_level = {}
+  35      for node, lvl in levels.items():
+  36          nodes_by_level.setdefault(lvl, []).append(node)
+  37      max_level = max(nodes_by_level)
+  38  
+  39      tickets_in = {collector: c_max}
+  40      capacity = {}
+  41  
+  42      for lvl in range(max_level + 1):
+  43          for u in nodes_by_level.get(lvl, []):
+  44              tickets = tickets_in.get(u, 0)
+  45              remaining = max(tickets - 1, 0)  # u consumes exactly 1 ticket
+  46              children = [v for v in G.neighbors(u) if levels.get(v) == lvl + 1]
+  47              if not children:
+  48                  continue
+  49              share, leftover = divmod(remaining, len(children))
+  50              for i, v in enumerate(children):
+  51                  t = share + (1 if i < leftover else 0)
+  52                  capacity[(u, v)] = 1 + t
+  53                  tickets_in[v] = tickets_in.get(v, 0) + t
+  54      return capacity
+  55  
+
+--- src/03_sumup_baseline.py, lines 67-77 ---
+  67  def votes_collected(flow_graph, collector, voters, cap_per_voter=1):
+  68      """Add a super-source wired to `voters` (capacity cap_per_voter each),
+  69      compute exact max-flow to the collector, return the flow value."""
+  70      F = flow_graph.copy()
+  71      F.add_node("SOURCE")
+  72      reachable_voters = [v for v in voters if v in flow_graph.nodes()]
+  73      for v in reachable_voters:
+  74          F.add_edge("SOURCE", v, capacity=cap_per_voter)
+  75      value, _ = nx.maximum_flow(F, "SOURCE", collector)
+  76      return value, len(reachable_voters)
+  77  
+

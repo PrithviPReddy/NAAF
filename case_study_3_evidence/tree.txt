@@ -1,0 +1,99 @@
+# Directory tree, depth 3, generated 2026-10-13
+# Skipped: venv, node_modules, __pycache__, .git, graphify-out/cache, and the contents of the downloaded/generated data folders
+
+.
+├── .gitignore
+├── NAAF_OUTCOMES.md
+├── README.md
+├── REPRODUCE.md
+├── data/
+│   ├── combined_graph.edgelist
+│   ├── combined_graph_sparse.edgelist
+│   ├── edge_attention.json
+│   ├── edge_attention_sparse.json
+│   ├── facebook_combined.txt
+│   ├── honest_graph.edgelist
+│   ├── real/  [data dump: 24 files, contents not listed]
+│   ├── sybil_labels.json
+│   ├── sybil_labels_sparse.json
+│   └── synthetic_v2/  [data dump: 60 files, contents not listed]
+├── figures/
+│   ├── real/
+│   │   ├── tradeoff_val.png
+│   │   └── tradeoff_val.svg
+│   └── synthetic_v2/
+│       ├── evasion_test.png
+│       ├── evasion_test.svg
+│       ├── evasion_val.png
+│       └── evasion_val.svg
+├── graphify-out/
+│   ├── .graphify_labels.json
+│   ├── .graphify_python
+│   ├── .graphify_root
+│   ├── GRAPH_REPORT.md
+│   ├── cost.json
+│   ├── graph.html
+│   ├── graph.json
+│   └── manifest.json
+├── requirements.txt
+├── results/
+│   ├── ablation_study.json
+│   ├── ablation_study_sparse.json
+│   ├── gatv2_layer.json
+│   ├── gatv2_layer_sparse.json
+│   ├── gatv2_model.pt
+│   ├── gatv2_model_sparse.pt
+│   ├── naaf_fusion.json
+│   ├── naaf_fusion_sparse.json
+│   ├── naaf_option_b_dense.json
+│   ├── naaf_option_b_sparse.json
+│   ├── percentile_experiment_dense.json
+│   ├── percentile_experiment_sparse.json
+│   ├── real/
+│   │   ├── classifier/
+│   │   ├── naaf/
+│   │   ├── splits/
+│   │   ├── sumup_mgtab.json
+│   │   └── sumup_mgtab.log
+│   ├── sumup_baseline.json
+│   ├── sumup_sparse.json
+│   ├── sybilrank_baseline.json
+│   ├── sybilrank_sparse.json
+│   └── synthetic_v2/
+│       ├── classifier/
+│       ├── honest_loss_diagnostic.json
+│       ├── naaf/
+│       └── stuffing/
+└── src/
+    ├── 01_build_graph.py
+    ├── 02_inject_sybils.py
+    ├── 02_inject_sybils_sparse.py
+    ├── 03_sumup_baseline.py
+    ├── 03_sumup_sparse.py
+    ├── 04_sybilrank_baseline.py
+    ├── 04_sybilrank_sparse.py
+    ├── 05_gatv2_layer.py
+    ├── 05_gatv2_sparse.py
+    ├── 06_naaf_fusion.py
+    ├── 06_naaf_fusion_sparse.py
+    ├── 07_ablation_study.py
+    ├── 07_ablation_study_sparse.py
+    ├── 08_percentile_experiment.py
+    ├── 09_naaf_option_b.py
+    ├── real/
+    │   ├── 01_load_mgtab.py
+    │   ├── 02_make_splits.py
+    │   ├── 03_sumup_mgtab.py
+    │   ├── 04_classifier_mgtab.py
+    │   ├── 05_naaf_mgtab.py
+    │   ├── 06_plot_tradeoff.py
+    │   ├── 07_classifier_test_metrics.py
+    │   └── colab_gatv2_all.ipynb
+    └── synthetic_v2/
+        ├── 01_make_scenarios.py
+        ├── 02_classifier.py
+        ├── 03_naaf_eval.py
+        ├── 04_make_stuffing.py
+        ├── 05_stuffing_eval.py
+        ├── 06_plot_evasion.py
+        └── 07_honest_loss_diagnostic.py

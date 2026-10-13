@@ -1,0 +1,38 @@
+# Heterophily-aware GATv2 (BotGATv2Skip, used by NAAF): the ego embedding bypasses attention,
+# GATv2 aggregates neighbours only (add_self_loops=False), and the output layer sees both
+# concatenated. The plain BotGATv2 (lines 59-69) is shown for comparison: it mixes ego and
+# neighbour features inside attention.
+
+--- src/real/04_classifier_mgtab.py, lines 59-89 ---
+  59  class BotGATv2(torch.nn.Module):
+  60      def __init__(self, in_dim, hidden=16, heads=4, edge_dim=None):
+  61          super().__init__()
+  62          self.proj = torch.nn.Linear(in_dim, 64)  # 788 -> 64 before attention keeps CPU memory sane
+  63          self.conv1 = GATv2Conv(64, hidden, heads=heads, dropout=0.2, edge_dim=edge_dim)
+  64          self.conv2 = GATv2Conv(hidden * heads, 1, heads=1, concat=False, dropout=0.2, edge_dim=edge_dim)
+  65  
+  66      def forward(self, x, edge_index, edge_attr=None):
+  67          x = F.dropout(F.elu(self.proj(x)), p=0.3, training=self.training)
+  68          x = F.elu(self.conv1(x, edge_index, edge_attr=edge_attr))
+  69          return self.conv2(x, edge_index, edge_attr=edge_attr).squeeze(-1)
+  70  
+  71  
+  72  class BotGATv2Skip(torch.nn.Module):
+  73      """Heterophily-aware variant (real-data Step 6a): bots' neighbours are
+  74      overwhelmingly human, so mixing a node's own features into the
+  75      neighbour average (BotGATv2 above) washes the bot signal out. Here the
+  76      ego embedding bypasses attention, attention aggregates NEIGHBOURS only
+  77      (no self-loops), and the final layer sees both side by side -- the
+  78      ego/neighbour separation of H2GCN (Zhu et al. 2020)."""
+  79  
+  80      def __init__(self, in_dim, hidden=16, heads=4):
+  81          super().__init__()
+  82          self.proj = torch.nn.Linear(in_dim, 64)
+  83          self.conv1 = GATv2Conv(64, hidden, heads=heads, dropout=0.2, add_self_loops=False)
+  84          self.out = torch.nn.Linear(64 + hidden * heads, 1)
+  85  
+  86      def forward(self, x, edge_index, edge_attr=None):
+  87          ego = F.dropout(F.elu(self.proj(x)), p=0.3, training=self.training)
+  88          neigh = F.elu(self.conv1(ego, edge_index))
+  89          return self.out(torch.cat([ego, neigh], dim=-1)).squeeze(-1)
+

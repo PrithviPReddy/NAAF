@@ -1,0 +1,51 @@
+RE-RUN on 2026-10-13: src/real/07_classifier_test_metrics.py, run on a copy of the repo (committed result files untouched).
+Scope of the re-run: test metrics recomputed from the SAVED model predictions
+  results/real/classifier/p_bot_<model>_seed<0-4>.npy and the frozen splits results/real/splits/.
+  The models were NOT retrained: training 3 models x 5 splits x 600 epochs took about 25 min on CPU,
+  over the 15-minute limit. The original training console output is LOADED FROM
+  results/real/classifier/classifier_e600.log (Part C below).
+Re-run output identical to committed results/real/classifier/classifier_test_metrics.json: YES
+
+A. Table (test splits, mean +/- std over 5 splits)
+
+Model                                                    AUC                F1     Bots caught at 1% of humans flagged
+GATv2, ego/neighbour separated (NAAF)          0.9584 +/- 0.0045     0.8172 +/- 0.0177                          43.2% +/- 6.2
+MLP, features only                             0.9535 +/- 0.0064     0.8084 +/- 0.0155                          38.0% +/- 7.6
+GATv2, plain                                   0.9466 +/- 0.0035     0.8057 +/- 0.0174                          29.1% +/- 12.4
+GATv2, all 7 relations (extra row)             0.8997 +/- 0.0366     0.7011 +/- 0.0874                          27.3% +/- 11.4
+
+B. Full console output of the re-run
+
+### started 2026-10-13 21:49:59 IST
+### command: python src/real/07_classifier_test_metrics.py
+  gatv2_social_skip_e600: auc 0.9584 +/- 0.0045  f1 0.8172 +/- 0.0177  tpr_at_1pct_fpr 0.4319 +/- 0.0621
+                mlp_e600: auc 0.9535 +/- 0.0064  f1 0.8084 +/- 0.0155  tpr_at_1pct_fpr 0.3802 +/- 0.0759
+       gatv2_social_e600: auc 0.9466 +/- 0.0035  f1 0.8057 +/- 0.0174  tpr_at_1pct_fpr 0.2909 +/- 0.1243
+               gatv2_all: auc 0.8997 +/- 0.0366  f1 0.7011 +/- 0.0874  tpr_at_1pct_fpr 0.2727 +/- 0.1139
+Saved <copy-of-repo>/results/real/classifier/classifier_test_metrics.json
+### finished 2026-10-13 21:50:00 IST, exit code 0, 1 s
+
+C. Original training console output (validation metrics), LOADED FROM results/real/classifier/classifier_e600.log
+
+9434 nodes; social edges (directed both ways): 662492; all-relation edges: 2809424; device: cpu
+gatv2_social_skip seed 0: epoch 334  val AUC 0.9599  F1 0.8228  humans p99 P(bot) 0.925  bots median P(bot) 0.803
+gatv2_social_skip seed 1: epoch 286  val AUC 0.9485  F1 0.7968  humans p99 P(bot) 0.865  bots median P(bot) 0.825
+gatv2_social_skip seed 2: epoch 533  val AUC 0.9684  F1 0.8449  humans p99 P(bot) 0.924  bots median P(bot) 0.879
+gatv2_social_skip seed 3: epoch 598  val AUC 0.9705  F1 0.8549  humans p99 P(bot) 0.905  bots median P(bot) 0.900
+gatv2_social_skip seed 4: epoch 572  val AUC 0.9599  F1 0.8162  humans p99 P(bot) 0.871  bots median P(bot) 0.876
+          mlp seed 0: epoch 598  val AUC 0.9514  F1 0.8008  humans p99 P(bot) 0.946  bots median P(bot) 0.801
+          mlp seed 1: epoch 586  val AUC 0.9462  F1 0.7870  humans p99 P(bot) 0.860  bots median P(bot) 0.804
+          mlp seed 2: epoch 583  val AUC 0.9606  F1 0.8034  humans p99 P(bot) 0.900  bots median P(bot) 0.778
+          mlp seed 3: epoch 579  val AUC 0.9589  F1 0.8122  humans p99 P(bot) 0.878  bots median P(bot) 0.843
+          mlp seed 4: epoch 597  val AUC 0.9628  F1 0.8373  humans p99 P(bot) 0.851  bots median P(bot) 0.818
+ gatv2_social seed 0: epoch 597  val AUC 0.9473  F1 0.8263  humans p99 P(bot) 0.856  bots median P(bot) 0.778
+ gatv2_social seed 1: epoch 572  val AUC 0.9310  F1 0.7753  humans p99 P(bot) 0.835  bots median P(bot) 0.752
+ gatv2_social seed 2: epoch 591  val AUC 0.9505  F1 0.8083  humans p99 P(bot) 0.887  bots median P(bot) 0.827
+ gatv2_social seed 3: epoch 555  val AUC 0.9611  F1 0.8121  humans p99 P(bot) 0.844  bots median P(bot) 0.816
+ gatv2_social seed 4: epoch 585  val AUC 0.9528  F1 0.8067  humans p99 P(bot) 0.753  bots median P(bot) 0.711
+
+Val summary (mean +/- std over 5 splits):
+  gatv2_social_skip: AUC 0.9614 +/- 0.0087   F1 0.8271 +/- 0.0232
+            mlp: AUC 0.9560 +/- 0.0069   F1 0.8081 +/- 0.0186
+   gatv2_social: AUC 0.9485 +/- 0.0111   F1 0.8057 +/- 0.0187
+Saved ./results/real/classifier

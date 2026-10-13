@@ -1,0 +1,27 @@
+# Pre-registration files: written before each test run, copied unchanged into preregistration/.
+# Timestamps: 'written_at' is UTC (written by the shell when the file was created); filesystem times are local (IST, UTC+5:30).
+# git commit dates show when the file entered version control, which was after the runs.
+
+File: results/real/naaf/test_preregistration.json
+  Last modified (filesystem): 2026-10-12 14:45:31 IST
+  'written_at' field inside the file: 2026-10-12T09:15:31Z
+  First git commit adding it: e71cd01 2026-10-12 15:47:41 +0530
+  Test result it governs: results/real/naaf/naaf_gatv2_social_skip_e600_test.json
+    last modified: 2026-10-12 14:46:10 IST
+
+File: results/synthetic_v2/naaf/test_preregistration.json
+  Last modified (filesystem): 2026-10-12 15:46:57 IST
+  'written_at' field inside the file: 2026-10-12T10:16:57Z
+  First git commit adding it: e71cd01 2026-10-12 15:47:41 +0530
+  Test result it governs: results/synthetic_v2/naaf/naaf_dense_gatv2_social_skip_test.json
+    last modified: 2026-10-12 15:47:03 IST
+
+File: results/synthetic_v2/stuffing/preregistration.json
+  Last modified (filesystem): 2026-10-12 15:03:39 IST
+  'written_at' field inside the file: 2026-10-12T09:33:39Z
+  First git commit adding it: e71cd01 2026-10-12 15:47:41 +0530
+  Test result it governs: results/synthetic_v2/stuffing/stuffing_test.json
+    last modified: 2026-10-12 15:06:50 IST
+
+Caveat: filesystem timestamps can be changed after the fact, so they are supporting evidence, not proof.
+The git commit (e71cd01) fixes the files' contents from 2026-10-12 15:47 IST onward.

@@ -1,0 +1,10 @@
+# Command: git log --oneline --date=short --format="%h %ad %an %s" | head -40
+# Run on 2026-10-13
+
+338e9be 2026-10-12 Prithvi P Reddy filling FB gap
+e71cd01 2026-10-12 Prithvi P Reddy many more changes
+0cf6788 2026-10-07 Prithvi P Reddy Update README.md
+9832cdd 2026-09-02 Ritvik Amin Add files via upload
+b7105fe 2026-09-02 Ritvik Amin Delete CONTENT.md
+ba3cc93 2026-09-01 Ritvik Amin Rename README.md to CONTENT.md
+2f84516 2026-09-01 Ritvik Amin Initial commit: NAAF implementation, data, and results

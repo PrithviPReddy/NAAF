@@ -1,0 +1,37 @@
+# NAAF-gated admission rule: a voter's SOURCE->voter capacity is 1 if P(bot) < tau, else 0;
+# SumUp's link capacities are left unchanged. Line 126 is the rule; lines 58-67 are where the
+# per-voter capacity enters the max-flow network (a weight of 0 adds no edge).
+
+--- src/real/05_naaf_mgtab.py, lines 58-67 ---
+  58  def votes_collected_weighted(flow_graph, collector, voter_weights):
+  59      """Same as votes_collected_weighted in src/09_naaf_option_b.py: each
+  60      voter gets its own SOURCE->voter capacity (weight in [0, 1])."""
+  61      F = flow_graph.copy()
+  62      F.add_node("SOURCE")
+  63      for v, w in voter_weights.items():
+  64          if w > 0:
+  65              F.add_edge("SOURCE", v, capacity=w)
+  66      value, _ = nx.maximum_flow(F, "SOURCE", collector)
+  67      return value
+
+--- src/real/05_naaf_mgtab.py, lines 94-102 ---
+  94      collector = sumup_mgtab.pick_collector(G, [v for v in split["train"] if v not in bot_set])
+  95      levels = sumup.bfs_levels(G, collector)
+  96      cap_sumup = sumup.ticket_distribution(G, levels, collector, C_MAX)
+  97      flow_sumup = sumup.build_flow_graph(G, levels, cap_sumup)
+  98  
+  99      def by_voter_weight(weight):
+ 100          return score(votes_collected_weighted(flow_sumup, collector, {v: weight(v) for v in bot_voters}),
+ 101                       votes_collected_weighted(flow_sumup, collector, {v: weight(v) for v in honest_voters}),
+ 102                       n_attack_edges, len(bot_voters))
+
+--- src/real/05_naaf_mgtab.py, lines 119-126 ---
+ 119      for q in quantiles:
+ 120          tau = float(np.quantile([p_bot[v] for v in val_humans], q))
+ 121          out["tau"][str(q)] = round(tau, 4)
+ 122          s = f"@q{q}"
+ 123          m["classifier_only" + s] = score(sum(p_bot[v] < tau for v in bot_voters),
+ 124                                           sum(p_bot[v] < tau for v in honest_voters),
+ 125                                           n_attack_edges, len(bot_voters))
+ 126          m["naaf_gated_hard" + s] = by_voter_weight(lambda v: 0.0 if p_bot[v] >= tau else 1.0)
+

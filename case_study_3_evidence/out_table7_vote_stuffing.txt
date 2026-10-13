@@ -1,0 +1,54 @@
+RE-RUN on 2026-10-13: python src/synthetic_v2/05_stuffing_eval.py --eval test
+  run on a copy of the repo (committed result files untouched). 500 Sybils behind 50 attack edges, 100 Sybil test voters per injection.
+Re-run output identical to committed results/synthetic_v2/stuffing/stuffing_test.json: YES
+
+A. Sybil votes accepted (test, mean of 5 injections), C_max = 1000
+
+  Sybils evading     SumUp   Classifier only   NAAF-gated   NAAF <= both?
+              0%     28.2%              0.0%         0.0%   True
+             25%     28.2%             25.0%        18.2%   True
+             50%     28.2%             50.0%        25.4%   True
+             75%     28.2%             74.6%        27.0%   True
+            100%     28.2%             99.6%        28.2%   True
+
+Honest votes collected: SumUp 20.0%, Classifier only 99.4%, NAAF-gated 19.9%
+
+A. Sybil votes accepted (test, mean of 5 injections), C_max = 5000
+
+  Sybils evading     SumUp   Classifier only   NAAF-gated   NAAF <= both?
+              0%     67.8%              0.0%         0.0%   True
+             25%     67.8%             25.0%        23.0%   True
+             50%     67.8%             50.0%        39.6%   True
+             75%     67.8%             74.6%        53.8%   True
+            100%     67.8%             99.6%        67.8%   True
+
+Honest votes collected: SumUp 25.8%, Classifier only 99.4%, NAAF-gated 25.7%
+
+B. Full console output of the re-run
+
+### started 2026-10-13 21:50:11 IST
+### command: python src/synthetic_v2/05_stuffing_eval.py --eval test
+seed 0 done: 100 Sybil voters, tau 0.0042
+seed 1 done: 100 Sybil voters, tau 0.0305
+seed 2 done: 100 Sybil voters, tau 0.0277
+seed 3 done: 100 Sybil voters, tau 0.0065
+seed 4 done: 100 Sybil voters, tau 0.0089
+
+test, C_max=1000 (mean of 5 injections) -- Sybil votes accepted (%) / honest collected (%)
+  evasion f           SumUp      Classifier      NAAF gated          NAAF-A   NAAF<=both?
+        0.0    28.2 / 20.0     0.0 / 99.4     0.0 / 19.9     0.3 / 20.0   True
+       0.25    28.2 / 20.0    25.0 / 99.4    18.2 / 19.9    18.3 / 20.0   True
+        0.5    28.2 / 20.0    50.0 / 99.4    25.4 / 19.9    25.4 / 20.0   True
+       0.75    28.2 / 20.0    74.6 / 99.4    27.0 / 19.9    27.0 / 20.0   True
+        1.0    28.2 / 20.0    99.6 / 99.4    28.2 / 19.9    28.2 / 20.0   True
+
+test, C_max=5000 (mean of 5 injections) -- Sybil votes accepted (%) / honest collected (%)
+  evasion f           SumUp      Classifier      NAAF gated          NAAF-A   NAAF<=both?
+        0.0    67.8 / 25.8     0.0 / 99.4     0.0 / 25.7     0.3 / 25.8   True
+       0.25    67.8 / 25.8    25.0 / 99.4    23.0 / 25.7    23.2 / 25.8   True
+        0.5    67.8 / 25.8    50.0 / 99.4    39.6 / 25.7    39.7 / 25.8   True
+       0.75    67.8 / 25.8    74.6 / 99.4    53.8 / 25.7    54.0 / 25.8   True
+        1.0    67.8 / 25.8    99.6 / 99.4    67.8 / 25.7    67.8 / 25.8   True
+
+Saved <copy-of-repo>/results/synthetic_v2/stuffing/stuffing_test.json
+### finished 2026-10-13 21:50:20 IST, exit code 0, 9 s

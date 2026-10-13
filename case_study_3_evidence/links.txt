@@ -1,0 +1,5 @@
+GitHub repository (from 'git remote -v'):
+https://github.com/ritvikamin/Naaf-Implementation
+
+Latest commit on local main: 338e9be 2026-10-12
+Whether this commit is pushed to GitHub was not checked (no network call made).

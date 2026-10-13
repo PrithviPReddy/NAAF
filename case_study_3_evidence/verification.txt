@@ -1,0 +1,48 @@
+VERIFICATION: code output vs paper values
+Checked on 2026-10-13. Nothing was adjusted to make values match.
+
+How the check was done
+- Each experiment was re-run on a copy of the repository, so the committed result files were not overwritten.
+  After the runs, `git status` and `git diff` show no changes to any tracked file.
+- Every re-run produced output IDENTICAL to the committed result file (every number, compared as parsed JSON).
+- Paper values were then compared with the re-run numbers, rounded to the paper's precision.
+- Table IV means are computed from the raw per-split vote counts. The script's own summary rounds each rate to
+  4 decimals before display, which can move the last digit (see the note under Table IV).
+
+TABLE III (classifier, MGTAB test): MATCHES
+  GATv2 ego/neighbour separated, AUC                       paper 0.958   code 0.958
+  GATv2 ego/neighbour separated, F1                        paper 0.817   code 0.817
+  GATv2 ego/neighbour separated, bots caught at 1% flagged paper 43.2%   code 43.2%
+  Scope: metrics were recomputed from the saved model predictions; the models were not retrained (training takes
+  about 25 min on CPU). The paper values provided cover only the GATv2-separated row. The MLP and plain GATv2 rows
+  are in out_table3_classifier.txt but were not checked against the paper.
+
+TABLE IV (MGTAB vote aggregation, C_max = 1000, test): MATCHES
+  SumUp            bot votes accepted   paper 94.6%   code 94.6% (94.586%)
+  SumUp            honest collected     paper 99.7%   code 99.7%
+  NAAF-gated       bot votes accepted   paper 68.8%   code 68.8% (68.808%)
+  NAAF-gated       honest collected     paper 99.1%   code 99.1%
+  Classifier-only  bot votes accepted   paper 70.5%   code 70.5% (70.545%)
+  Classifier-only  honest collected     paper 99.4%   code 99.4%
+  Note on Classifier-only: the result JSON stores the mean as 0.7055 (rounded to 4 decimals). Rounding that
+  stored value again gives 70.6%, which is the figure in two earlier write-ups (NAAF_OUTCOMES.md and the paper
+  blueprint). The exact value from the raw counts is 70.545%, so the paper's 70.5% is correct and those two
+  write-ups are off by 0.1 point. They were not changed.
+  Win rule: NAAF-gated meets it on the 5-split mean (4 of 5 splits); Classifier-only meets it (5 of 5).
+
+TABLE V (Facebook, wide and narrow cut, test): NOT CHECKED AGAINST THE PAPER
+  No paper values were provided for this table. The re-run is identical to the committed result files.
+  Numbers are in out_table5_facebook.txt (e.g. wide cut: SumUp 95.0% / 51.0%, NAAF-gated 0.5% / 50.3%,
+  Classifier-only 0.5% / 98.9% Sybil votes accepted / honest collected).
+
+TABLE VII (vote stuffing, NAAF-gated, C_max = 1000, test): MATCHES
+  Evasion   0%     paper 0.0%    code 0.0%
+  Evasion  25%     paper 18.2%   code 18.2%
+  Evasion  50%     paper 25.4%   code 25.4%
+  Evasion  75%     paper 27.0%   code 27.0%
+  Evasion 100%     paper 28.2%   code 28.2%
+  The pre-registered claim (NAAF-gated <= both SumUp and Classifier-only at every evasion level) holds at every
+  level, for both C_max = 1000 and C_max = 5000.
+
+Summary: every paper value provided (Tables III, IV, VII) matches the code output; no differences.
+Table V had no paper values to check.

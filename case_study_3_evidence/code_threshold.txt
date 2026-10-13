@@ -1,0 +1,31 @@
+# tau = q-quantile of P(bot) over HUMAN users of the validation split (no bot labels used).
+# In src/real/05_naaf_mgtab.py q comes from the --quantiles command-line argument; the MGTAB test
+# run used --quantiles 0.995 (recorded as "quantiles": [0.995] in
+# results/real/naaf/naaf_gatv2_social_skip_e600_test.json and in the pre-registration file).
+# The vote-stuffing script hard-codes Q = 0.995 (second excerpt).
+
+--- src/real/05_naaf_mgtab.py, lines 86-88 ---
+  86  def run_split(G, bot_set, split, p_bot, quantiles, eval_part):
+  87      seed = split["seed"]
+  88      val_humans = [v for v in split["val"] if v not in bot_set]
+
+--- src/real/05_naaf_mgtab.py, lines 117-121 ---
+ 117      tau_lo = float(np.quantile([p_bot[v] for v in val_humans], Q_LO))
+ 118      out["tau"] = {}
+ 119      for q in quantiles:
+ 120          tau = float(np.quantile([p_bot[v] for v in val_humans], q))
+ 121          out["tau"][str(q)] = round(tau, 4)
+
+--- src/real/05_naaf_mgtab.py, the --quantiles argument ---
+ 166      parser.add_argument("--quantiles", nargs="+", type=float, default=[0.99, 0.995])
+
+--- src/synthetic_v2/05_stuffing_eval.py, lines 39-41 ---
+  39  SEEDS = [0, 1, 2, 3, 4]
+  40  Q = 0.995
+  41  EVASION = [0.0, 0.25, 0.5, 0.75, 1.0]
+
+--- src/synthetic_v2/05_stuffing_eval.py, lines 55-57 ---
+  55      honest_voters = random.Random(seed).sample([v for v in split[eval_part] if v not in bots], naaf.N_HONEST_VOTERS)
+  56      bot_voters = [v for v in split[eval_part] if v in bots]
+  57      tau = float(np.quantile([p_bot[v] for v in split["val"] if v not in bots], Q))
+
